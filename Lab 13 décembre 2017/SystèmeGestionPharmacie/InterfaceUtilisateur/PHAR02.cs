@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SystèmeGestionPharmacie.InterfaceUtilisateur
+namespace SysPharmacie
 {
-    public partial class Form1 : Form
+    public partial class PHAR02 : Form
     {
-        public Form1()
+        public PHAR02()
         {
             InitializeComponent();
         }
