@@ -136,7 +136,6 @@
     <Compile Include="InterfaceUtilisateur\PRES01.Designer.cs">
       <DependentUpon>PRES01.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterfaceUtilisateur\Program.cs" />
     <Compile Include="InterfaceUtilisateur\RAPP01.cs">
       <SubType>Form</SubType>
     </Compile>
