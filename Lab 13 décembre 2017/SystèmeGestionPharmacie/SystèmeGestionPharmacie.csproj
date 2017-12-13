@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEB749D9-E23E-435E-B3E6-A6CBB2715C3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SystèmeGestionPharmacie</RootNamespace>
+    <AssemblyName>SystèmeGestionPharmacie</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\DataMapperFactory.cs" />
+    <Compile Include="DAL\Enum.cs" />
+    <Compile Include="DAL\ILigneTransactionVenteMapper.cs" />
+    <Compile Include="DAL\IMédecinMapper.cs" />
+    <Compile Include="DAL\IMédicamentMapper.cs" />
+    <Compile Include="DAL\IPaiementMapper.cs" />
+    <Compile Include="DAL\IPatientMapper.cs" />
+    <Compile Include="DAL\IPharmacieMapper.cs" />
+    <Compile Include="DAL\IPharmacienMapper.cs" />
+    <Compile Include="DAL\IPrescriptionLignePrescriptionMédicamentMapper.cs" />
+    <Compile Include="DAL\IPrescriptionMapper.cs" />
+    <Compile Include="DAL\IRuptureDeStockMapper.cs" />
+    <Compile Include="DAL\ISessionMapper.cs" />
+    <Compile Include="DAL\ITransactionVenteMapper.cs" />
+    <Compile Include="DAL\IUtilisateurMapper.cs" />
+    <Compile Include="DAL\MSSQL\AbstractMapper.cs" />
+    <Compile Include="DAL\MSSQL\Database.cs" />
+    <Compile Include="DAL\MSSQL\LigneTransactionVenteMapper.cs" />
+    <Compile Include="DAL\MSSQL\MSSQLDataMapperFactory.cs" />
+    <Compile Include="DAL\MSSQL\MédecinMapper.cs" />
+    <Compile Include="DAL\MSSQL\MédicamentMapper.cs" />
+    <Compile Include="DAL\MSSQL\PaiementMapper.cs" />
+    <Compile Include="DAL\MSSQL\PatientMapper.cs" />
+    <Compile Include="DAL\MSSQL\PharmacieMapper.cs" />
+    <Compile Include="DAL\MSSQL\PharmacienMapper.cs" />
+    <Compile Include="DAL\MSSQL\PrescriptionLignePrescriptionMédicamentMapper.cs" />
+    <Compile Include="DAL\MSSQL\PrescriptionMapper.cs" />
+    <Compile Include="DAL\MSSQL\RuptureDeStockMapper.cs" />
+    <Compile Include="DAL\MSSQL\SessionMapper.cs" />
+    <Compile Include="DAL\MSSQL\TransactionVenteMapper.cs" />
+    <Compile Include="DAL\MSSQL\UtilisateurMapper.cs" />
+    <Compile Include="GlobalConfig.cs" />
+    <Compile Include="InterfaceUtilisateur\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logique\DomainObject.cs" />
+    <Compile Include="Logique\LigneTransactionVente.cs" />
+    <Compile Include="Logique\Médecin.cs" />
+    <Compile Include="Logique\Médicament.cs" />
+    <Compile Include="Logique\Paiement.cs" />
+    <Compile Include="Logique\Patient.cs" />
+    <Compile Include="Logique\Pharmacie.cs" />
+    <Compile Include="Logique\Pharmacien.cs" />
+    <Compile Include="Logique\Posologie.cs" />
+    <Compile Include="Logique\Prescription.cs" />
+    <Compile Include="Logique\PrescriptionLignePrescriptionMédicament.cs" />
+    <Compile Include="Logique\RuptureDeStock.cs" />
+    <Compile Include="Logique\Session.cs" />
+    <Compile Include="Logique\TransactionVente.cs" />
+    <Compile Include="Logique\Utilisateur.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

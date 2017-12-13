@@ -1,0 +1,8 @@
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe.config
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe.config
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.Properties.Resources.resources
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.csproj.GenerateResource.Cache
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.pdb
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.exe
+C:\Users\khriis01\Data\Cours\Annexes Cours\CodeGenerationWithXSLT\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.pdb
