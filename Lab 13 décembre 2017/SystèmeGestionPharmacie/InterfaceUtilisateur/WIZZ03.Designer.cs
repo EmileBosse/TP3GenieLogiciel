@@ -1,4 +1,4 @@
-﻿namespace SysPharmacie
+﻿namespace SystèmeGestionPharmacie
 {
     partial class WIZZ03
     {

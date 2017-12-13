@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SysPharmacie
+namespace SystèmeGestionPharmacie
 {
     public partial class PRES01 : Form
     {

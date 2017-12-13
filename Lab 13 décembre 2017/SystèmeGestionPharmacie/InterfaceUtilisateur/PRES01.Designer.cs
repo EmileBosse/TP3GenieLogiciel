@@ -1,4 +1,4 @@
-﻿namespace SysPharmacie
+﻿namespace SystèmeGestionPharmacie
 {
     partial class PRES01
     {
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRES01));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -48,7 +50,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +70,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(448, 323);
             this.panel2.TabIndex = 62;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(97, 45);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 50;
             // 
             // label6
             // 
@@ -231,7 +239,7 @@
             // 
             // button6
             // 
-            this.button6.Image = global::SysPharmacie.Properties.Resources.ic_note_add_black_48dp;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.Location = new System.Drawing.Point(345, 489);
             this.button6.Name = "button6";
@@ -240,13 +248,6 @@
             this.button6.Text = "Entrer prescription";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(97, 45);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 50;
             // 
             // PRES01
             // 

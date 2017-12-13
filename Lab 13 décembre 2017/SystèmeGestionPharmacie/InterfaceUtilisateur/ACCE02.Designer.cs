@@ -1,4 +1,4 @@
-﻿namespace SysPharmacie
+﻿namespace SystèmeGestionPharmacie
 {
     partial class ACCE02
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ACCE02));
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@
             // 
             // button6
             // 
-            this.button6.Image = global::SysPharmacie.Properties.Resources.ic_power_settings_new_black_48dp;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.Location = new System.Drawing.Point(600, 107);
             this.button6.Name = "button6";
@@ -50,7 +51,7 @@
             // 
             // button4
             // 
-            this.button4.Image = global::SysPharmacie.Properties.Resources.ic_business_black_48dp;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.Location = new System.Drawing.Point(600, 12);
             this.button4.Name = "button4";
@@ -62,7 +63,7 @@
             // 
             // button3
             // 
-            this.button3.Image = global::SysPharmacie.Properties.Resources.ic_person_black_48dp;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.Location = new System.Drawing.Point(404, 12);
             this.button3.Name = "button3";
@@ -74,7 +75,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::SysPharmacie.Properties.Resources.ic_business_center_black_48dp;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(208, 12);
             this.button2.Name = "button2";
@@ -86,7 +87,7 @@
             // 
             // button5
             // 
-            this.button5.Image = global::SysPharmacie.Properties.Resources.ic_content_paste_black_36dp;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.Location = new System.Drawing.Point(12, 107);
             this.button5.Name = "button5";
@@ -97,7 +98,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::SysPharmacie.Properties.Resources.ic_favorite_black_48dp;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
