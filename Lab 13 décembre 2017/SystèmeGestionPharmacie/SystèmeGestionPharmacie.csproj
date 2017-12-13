@@ -76,11 +76,114 @@
     <Compile Include="DAL\MSSQL\TransactionVenteMapper.cs" />
     <Compile Include="DAL\MSSQL\UtilisateurMapper.cs" />
     <Compile Include="GlobalConfig.cs" />
-    <Compile Include="InterfaceUtilisateur\Form1.cs">
+    <Compile Include="InterfaceUtilisateur\ACCE01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfaceUtilisateur\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="InterfaceUtilisateur\ACCE01.Designer.cs">
+      <DependentUpon>ACCE01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\ACCE02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\ACCE02.Designer.cs">
+      <DependentUpon>ACCE02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\MEDE01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\MEDE01.Designer.cs">
+      <DependentUpon>MEDE01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\MEDI01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\MEDI01.Designer.cs">
+      <DependentUpon>MEDI01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\MEDI02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\MEDI02.Designer.cs">
+      <DependentUpon>MEDI02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PATI01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PATI01.Designer.cs">
+      <DependentUpon>PATI01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PATI02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PATI02.Designer.cs">
+      <DependentUpon>PATI02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PHAR01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PHAR01.Designer.cs">
+      <DependentUpon>PHAR01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PHAR02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PHAR02.Designer.cs">
+      <DependentUpon>PHAR02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PRES01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\PRES01.Designer.cs">
+      <DependentUpon>PRES01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\Program.cs" />
+    <Compile Include="InterfaceUtilisateur\RAPP01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\RAPP01.Designer.cs">
+      <DependentUpon>RAPP01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ01.Designer.cs">
+      <DependentUpon>WIZZ01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ02.Designer.cs">
+      <DependentUpon>WIZZ02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ03.Designer.cs">
+      <DependentUpon>WIZZ03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ04.Designer.cs">
+      <DependentUpon>WIZZ04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ05.Designer.cs">
+      <DependentUpon>WIZZ05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ06.Designer.cs">
+      <DependentUpon>WIZZ06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\WIZZ07.Designer.cs">
+      <DependentUpon>WIZZ07.cs</DependentUpon>
     </Compile>
     <Compile Include="Logique\DomainObject.cs" />
     <Compile Include="Logique\LigneTransactionVente.cs" />
@@ -100,6 +203,60 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util.cs" />
+    <EmbeddedResource Include="InterfaceUtilisateur\ACCE01.resx">
+      <DependentUpon>ACCE01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\ACCE02.resx">
+      <DependentUpon>ACCE02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\MEDE01.resx">
+      <DependentUpon>MEDE01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\MEDI01.resx">
+      <DependentUpon>MEDI01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\MEDI02.resx">
+      <DependentUpon>MEDI02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\PATI01.resx">
+      <DependentUpon>PATI01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\PATI02.resx">
+      <DependentUpon>PATI02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\PHAR01.resx">
+      <DependentUpon>PHAR01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\PHAR02.resx">
+      <DependentUpon>PHAR02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\PRES01.resx">
+      <DependentUpon>PRES01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\RAPP01.resx">
+      <DependentUpon>RAPP01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ01.resx">
+      <DependentUpon>WIZZ01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ02.resx">
+      <DependentUpon>WIZZ02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ03.resx">
+      <DependentUpon>WIZZ03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ04.resx">
+      <DependentUpon>WIZZ04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ05.resx">
+      <DependentUpon>WIZZ05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ06.resx">
+      <DependentUpon>WIZZ06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\WIZZ07.resx">
+      <DependentUpon>WIZZ07.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
