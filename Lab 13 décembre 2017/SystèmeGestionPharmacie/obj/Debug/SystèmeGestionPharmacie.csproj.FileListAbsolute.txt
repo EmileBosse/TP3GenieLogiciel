@@ -32,3 +32,30 @@ C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 d�
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ07.resources
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.pdb
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.csprojResolveAssemblyReference.cache
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.ACCE01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.ACCE02.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.MEDE01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.MEDI01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.MEDI02.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.PATI01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.PATI02.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.PHAR01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.PHAR02.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.PRES01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.RAPP01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ01.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ02.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ03.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ04.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ05.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ06.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ07.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.Properties.Resources.resources
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.csproj.GenerateResource.Cache
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.csproj.CoreCompileInputs.cache
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.exe
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.pdb
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe.config
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.pdb

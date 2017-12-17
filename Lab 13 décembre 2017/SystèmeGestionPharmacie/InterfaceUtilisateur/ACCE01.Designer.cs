@@ -54,6 +54,7 @@
             this.btnConnexion.TabIndex = 10;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // lblPassword
             // 

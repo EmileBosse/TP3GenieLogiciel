@@ -16,5 +16,10 @@ namespace SystèmeGestionPharmacie
         {
             InitializeComponent();
         }
+
+        private void btnConnexion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

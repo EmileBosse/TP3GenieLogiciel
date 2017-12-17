@@ -17,23 +17,23 @@ namespace SystèmeGestionPharmacie
             InitializeComponent();
         }
 
-        private void WIZZ01_Load(object sender, EventArgs e)
+        public void CloseCreator()
         {
-            
+            this.Close();
         }
 
         private void btnNvlPrescription_Click(object sender, EventArgs e)
         {
-            WIZZ02 c = new WIZZ02();
+            WIZZ02 c = new WIZZ02(this);
             c.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnRenouveler_Click(object sender, EventArgs e)
         {
-            WIZZ06 c = new WIZZ06();
+            WIZZ06 c = new WIZZ06(this);
             c.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
