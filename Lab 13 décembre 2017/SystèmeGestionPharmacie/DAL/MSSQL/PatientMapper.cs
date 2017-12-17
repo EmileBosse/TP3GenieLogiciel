@@ -33,6 +33,20 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lPatient;
         }
 
+        public Patient Find(string nom, string prenom)
+        {
+            Patient lPatient;
+            
+                DataRow row = DataBase.SelectRow("[tblPatient]"," Nom='"+nom+"' and Prénom='"+prenom+"'");
+                if (Util.isNULL(row))
+                    return null;
+                lPatient = this.FillFields(row);
+                LoadedMap.Add(lPatient.ID, lPatient);
+            
+            return lPatient;
+            throw new NotImplementedException();
+        }
+
 
         //--------------------------------------------------------------------
         private Patient FillFields(DataRow pDataRow)
