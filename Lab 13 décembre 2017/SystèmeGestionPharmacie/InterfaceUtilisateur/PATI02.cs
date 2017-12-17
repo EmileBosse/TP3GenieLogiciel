@@ -42,7 +42,9 @@ namespace SystèmeGestionPharmacie
             if (pM.Insert(p) > 0)
             {
                 System.Windows.Forms.MessageBox.Show("Succès ! Patient ajouté !");
-                this.Hide();
+                var dlgPati = (PATI01)Tag;
+                dlgPati.Show();
+                Close();
             }
             else
             {
