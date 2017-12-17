@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbMedicaments = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRechercher = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRechercheNom = new System.Windows.Forms.TextBox();
+            this.txtRechercheNumero = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.chbMedicamentActif = new System.Windows.Forms.CheckBox();
@@ -56,44 +56,44 @@
             this.btnRuptureStock = new System.Windows.Forms.Button();
             this.btnModifierMedicament = new System.Windows.Forms.Button();
             this.btnAjouterMedicament = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRetour = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.udnUnitePosologie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udnJoursPosologie)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbMedicaments
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lbMedicaments.FormattingEnabled = true;
+            this.lbMedicaments.Items.AddRange(new object[] {
             "1\tAcétaminophène,",
             "2 \tIbuprophène"});
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(308, 355);
-            this.listBox1.TabIndex = 34;
+            this.lbMedicaments.Location = new System.Drawing.Point(12, 12);
+            this.lbMedicaments.Name = "lbMedicaments";
+            this.lbMedicaments.Size = new System.Drawing.Size(308, 355);
+            this.lbMedicaments.TabIndex = 34;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnRechercher);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtRechercheNom);
+            this.panel1.Controls.Add(this.txtRechercheNumero);
             this.panel1.Location = new System.Drawing.Point(345, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 107);
             this.panel1.TabIndex = 40;
             // 
-            // button1
+            // btnRechercher
             // 
-            this.button1.Location = new System.Drawing.Point(98, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Rechercher";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRechercher.Location = new System.Drawing.Point(98, 73);
+            this.btnRechercher.Name = "btnRechercher";
+            this.btnRechercher.Size = new System.Drawing.Size(75, 23);
+            this.btnRechercher.TabIndex = 44;
+            this.btnRechercher.Text = "Rechercher";
+            this.btnRechercher.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -113,19 +113,19 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Numéro";
             // 
-            // textBox2
+            // txtRechercheNom
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 20);
-            this.textBox2.TabIndex = 41;
+            this.txtRechercheNom.Location = new System.Drawing.Point(98, 47);
+            this.txtRechercheNom.Name = "txtRechercheNom";
+            this.txtRechercheNom.Size = new System.Drawing.Size(208, 20);
+            this.txtRechercheNom.TabIndex = 41;
             // 
-            // textBox1
+            // txtRechercheNumero
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(70, 20);
-            this.textBox1.TabIndex = 40;
+            this.txtRechercheNumero.Location = new System.Drawing.Point(98, 21);
+            this.txtRechercheNumero.Name = "txtRechercheNumero";
+            this.txtRechercheNumero.Size = new System.Drawing.Size(70, 20);
+            this.txtRechercheNumero.TabIndex = 40;
             // 
             // panel2
             // 
@@ -308,27 +308,27 @@
             this.btnAjouterMedicament.Text = "Ajouter";
             this.btnAjouterMedicament.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRetour
             // 
-            this.button2.Location = new System.Drawing.Point(651, 341);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Retour";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRetour.Location = new System.Drawing.Point(651, 341);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(75, 23);
+            this.btnRetour.TabIndex = 61;
+            this.btnRetour.Text = "Retour";
+            this.btnRetour.UseVisualStyleBackColor = true;
             // 
             // MEDI01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 376);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnRuptureStock);
             this.Controls.Add(this.btnModifierMedicament);
             this.Controls.Add(this.btnAjouterMedicament);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbMedicaments);
             this.Name = "MEDI01";
             this.Text = "Gestion des médicaments";
             this.panel1.ResumeLayout(false);
@@ -342,13 +342,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbMedicaments;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRechercher;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRechercheNom;
+        private System.Windows.Forms.TextBox txtRechercheNumero;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox chbMedicamentActif;
         private System.Windows.Forms.NumericUpDown udnUnitePosologie;
@@ -370,6 +370,6 @@
         private System.Windows.Forms.Button btnModifierMedicament;
         private System.Windows.Forms.Button btnAjouterMedicament;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRetour;
     }
 }

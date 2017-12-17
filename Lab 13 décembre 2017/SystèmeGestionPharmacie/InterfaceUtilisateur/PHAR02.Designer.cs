@@ -28,65 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.chbMedicamentActif = new System.Windows.Forms.CheckBox();
-            this.txtPrixVente = new System.Windows.Forms.TextBox();
-            this.txtEndroit = new System.Windows.Forms.TextBox();
-            this.txtManiereLivraison = new System.Windows.Forms.TextBox();
-            this.txtNomMedicament = new System.Windows.Forms.TextBox();
-            this.txtNumeroMedicament = new System.Windows.Forms.TextBox();
+            this.chbPharmacieActif = new System.Windows.Forms.CheckBox();
+            this.txtTelephonePharmacie = new System.Windows.Forms.TextBox();
+            this.txtAdressePharmacie = new System.Windows.Forms.TextBox();
+            this.txtResponsablePharmacie = new System.Windows.Forms.TextBox();
+            this.txtNomPharmacie = new System.Windows.Forms.TextBox();
+            this.txtNumeroPharmacie = new System.Windows.Forms.TextBox();
             this.lblPrixVente = new System.Windows.Forms.Label();
             this.lblEndroit = new System.Windows.Forms.Label();
             this.lblManiereLivraison = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // chbMedicamentActif
+            // chbPharmacieActif
             // 
-            this.chbMedicamentActif.AutoSize = true;
-            this.chbMedicamentActif.Location = new System.Drawing.Point(82, 136);
-            this.chbMedicamentActif.Name = "chbMedicamentActif";
-            this.chbMedicamentActif.Size = new System.Drawing.Size(47, 17);
-            this.chbMedicamentActif.TabIndex = 59;
-            this.chbMedicamentActif.Text = "Actif";
-            this.chbMedicamentActif.UseVisualStyleBackColor = true;
+            this.chbPharmacieActif.AutoSize = true;
+            this.chbPharmacieActif.Location = new System.Drawing.Point(82, 136);
+            this.chbPharmacieActif.Name = "chbPharmacieActif";
+            this.chbPharmacieActif.Size = new System.Drawing.Size(47, 17);
+            this.chbPharmacieActif.TabIndex = 59;
+            this.chbPharmacieActif.Text = "Actif";
+            this.chbPharmacieActif.UseVisualStyleBackColor = true;
             // 
-            // txtPrixVente
+            // txtTelephonePharmacie
             // 
-            this.txtPrixVente.Location = new System.Drawing.Point(82, 110);
-            this.txtPrixVente.Name = "txtPrixVente";
-            this.txtPrixVente.Size = new System.Drawing.Size(100, 20);
-            this.txtPrixVente.TabIndex = 58;
+            this.txtTelephonePharmacie.Location = new System.Drawing.Point(82, 110);
+            this.txtTelephonePharmacie.Name = "txtTelephonePharmacie";
+            this.txtTelephonePharmacie.Size = new System.Drawing.Size(100, 20);
+            this.txtTelephonePharmacie.TabIndex = 58;
             // 
-            // txtEndroit
+            // txtAdressePharmacie
             // 
-            this.txtEndroit.Location = new System.Drawing.Point(82, 84);
-            this.txtEndroit.Name = "txtEndroit";
-            this.txtEndroit.Size = new System.Drawing.Size(208, 20);
-            this.txtEndroit.TabIndex = 57;
+            this.txtAdressePharmacie.Location = new System.Drawing.Point(82, 84);
+            this.txtAdressePharmacie.Name = "txtAdressePharmacie";
+            this.txtAdressePharmacie.Size = new System.Drawing.Size(208, 20);
+            this.txtAdressePharmacie.TabIndex = 57;
             // 
-            // txtManiereLivraison
+            // txtResponsablePharmacie
             // 
-            this.txtManiereLivraison.Location = new System.Drawing.Point(82, 58);
-            this.txtManiereLivraison.Name = "txtManiereLivraison";
-            this.txtManiereLivraison.Size = new System.Drawing.Size(208, 20);
-            this.txtManiereLivraison.TabIndex = 56;
+            this.txtResponsablePharmacie.Location = new System.Drawing.Point(82, 58);
+            this.txtResponsablePharmacie.Name = "txtResponsablePharmacie";
+            this.txtResponsablePharmacie.Size = new System.Drawing.Size(208, 20);
+            this.txtResponsablePharmacie.TabIndex = 56;
             // 
-            // txtNomMedicament
+            // txtNomPharmacie
             // 
-            this.txtNomMedicament.Location = new System.Drawing.Point(82, 32);
-            this.txtNomMedicament.Name = "txtNomMedicament";
-            this.txtNomMedicament.Size = new System.Drawing.Size(208, 20);
-            this.txtNomMedicament.TabIndex = 55;
+            this.txtNomPharmacie.Location = new System.Drawing.Point(82, 32);
+            this.txtNomPharmacie.Name = "txtNomPharmacie";
+            this.txtNomPharmacie.Size = new System.Drawing.Size(208, 20);
+            this.txtNomPharmacie.TabIndex = 55;
             // 
-            // txtNumeroMedicament
+            // txtNumeroPharmacie
             // 
-            this.txtNumeroMedicament.Location = new System.Drawing.Point(82, 6);
-            this.txtNumeroMedicament.Name = "txtNumeroMedicament";
-            this.txtNumeroMedicament.Size = new System.Drawing.Size(70, 20);
-            this.txtNumeroMedicament.TabIndex = 54;
+            this.txtNumeroPharmacie.Location = new System.Drawing.Point(82, 6);
+            this.txtNumeroPharmacie.Name = "txtNumeroPharmacie";
+            this.txtNumeroPharmacie.Size = new System.Drawing.Size(70, 20);
+            this.txtNumeroPharmacie.TabIndex = 54;
             // 
             // lblPrixVente
             // 
@@ -133,37 +133,37 @@
             this.lblNumero.TabIndex = 49;
             this.lblNumero.Text = "Numéro";
             // 
-            // button1
+            // btnAjouter
             // 
-            this.button1.Location = new System.Drawing.Point(161, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Ajouter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAjouter.Location = new System.Drawing.Point(161, 172);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(75, 23);
+            this.btnAjouter.TabIndex = 60;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAnnuler
             // 
-            this.button2.Location = new System.Drawing.Point(242, 172);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Location = new System.Drawing.Point(242, 172);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.TabIndex = 61;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
             // PHAR02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 207);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.chbMedicamentActif);
-            this.Controls.Add(this.txtPrixVente);
-            this.Controls.Add(this.txtEndroit);
-            this.Controls.Add(this.txtManiereLivraison);
-            this.Controls.Add(this.txtNomMedicament);
-            this.Controls.Add(this.txtNumeroMedicament);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.chbPharmacieActif);
+            this.Controls.Add(this.txtTelephonePharmacie);
+            this.Controls.Add(this.txtAdressePharmacie);
+            this.Controls.Add(this.txtResponsablePharmacie);
+            this.Controls.Add(this.txtNomPharmacie);
+            this.Controls.Add(this.txtNumeroPharmacie);
             this.Controls.Add(this.lblPrixVente);
             this.Controls.Add(this.lblEndroit);
             this.Controls.Add(this.lblManiereLivraison);
@@ -178,18 +178,18 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox chbMedicamentActif;
-        private System.Windows.Forms.TextBox txtPrixVente;
-        private System.Windows.Forms.TextBox txtEndroit;
-        private System.Windows.Forms.TextBox txtManiereLivraison;
-        private System.Windows.Forms.TextBox txtNomMedicament;
-        private System.Windows.Forms.TextBox txtNumeroMedicament;
+        private System.Windows.Forms.CheckBox chbPharmacieActif;
+        private System.Windows.Forms.TextBox txtTelephonePharmacie;
+        private System.Windows.Forms.TextBox txtAdressePharmacie;
+        private System.Windows.Forms.TextBox txtResponsablePharmacie;
+        private System.Windows.Forms.TextBox txtNomPharmacie;
+        private System.Windows.Forms.TextBox txtNumeroPharmacie;
         private System.Windows.Forms.Label lblPrixVente;
         private System.Windows.Forms.Label lblEndroit;
         private System.Windows.Forms.Label lblManiereLivraison;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnAnnuler;
     }
 }
