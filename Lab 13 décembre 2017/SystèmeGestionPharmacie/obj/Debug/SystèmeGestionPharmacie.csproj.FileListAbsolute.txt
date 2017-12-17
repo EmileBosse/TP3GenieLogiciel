@@ -13,7 +13,6 @@ C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 d�
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.Properties.Resources.resources
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.csproj.GenerateResource.Cache
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.ACCE01.resources
-C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.ACCE02.resources
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.MEDE01.resources
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.MEDI01.resources
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.MEDI02.resources
@@ -32,3 +31,4 @@ C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 d�
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.WIZZ07.resources
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe
 C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.pdb
+C:\Users\Willis\Documents\Visual Studio 2015\Projects\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.InterfaceUtilisateur.ACCE02.resources

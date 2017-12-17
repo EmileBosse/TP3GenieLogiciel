@@ -50,6 +50,7 @@
             this.txtRechercheNumero = new System.Windows.Forms.TextBox();
             this.lbPrescriptions = new System.Windows.Forms.ListBox();
             this.btnNouvellePrescription = new System.Windows.Forms.Button();
+            this.btnRetour = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -243,17 +244,28 @@
             this.btnNouvellePrescription.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNouvellePrescription.Location = new System.Drawing.Point(345, 489);
             this.btnNouvellePrescription.Name = "btnNouvellePrescription";
-            this.btnNouvellePrescription.Size = new System.Drawing.Size(448, 73);
+            this.btnNouvellePrescription.Size = new System.Drawing.Size(375, 73);
             this.btnNouvellePrescription.TabIndex = 64;
             this.btnNouvellePrescription.Text = "Entrer prescription";
             this.btnNouvellePrescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNouvellePrescription.UseVisualStyleBackColor = true;
+            // 
+            // btnRetour
+            // 
+            this.btnRetour.Location = new System.Drawing.Point(726, 489);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(67, 73);
+            this.btnRetour.TabIndex = 65;
+            this.btnRetour.Text = "Retour";
+            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // PRES01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 568);
+            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnNouvellePrescription);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -290,5 +302,6 @@
         private System.Windows.Forms.Button btnNouvellePrescription;
         private System.Windows.Forms.DateTimePicker dtpRechercheDate;
         private System.Windows.Forms.TextBox txtDatePrescription;
+        private System.Windows.Forms.Button btnRetour;
     }
 }

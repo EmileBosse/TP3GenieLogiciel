@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystèmeGestionPharmacie;
+using SystèmeGestionPharmacie.InterfaceUtilisateur;
 
 namespace SystèmeGestionPharmacie
 {
@@ -17,7 +18,7 @@ namespace SystèmeGestionPharmacie
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ACCE01());
+            Application.Run(new ACCE02());
         }
     }
 }

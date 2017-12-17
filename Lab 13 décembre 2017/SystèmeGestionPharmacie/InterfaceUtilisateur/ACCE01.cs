@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystèmeGestionPharmacie.Logique;
 using SystèmeGestionPharmacie.DAL.MSSQL;
+using SystèmeGestionPharmacie.InterfaceUtilisateur;
 
 namespace SystèmeGestionPharmacie
 {
