@@ -30,19 +30,23 @@ namespace SystèmeGestionPharmacie
         private void btnRechercher_Click(object sender, EventArgs e)
         {
             PatientMapper pM = new PatientMapper();
-            Patient p = pM.Find(txtRechercheNom.Text, txtRecherchePrenom.Text);
-            if(Util.isNULL(p))
+            List<Patient> lp = pM.Find(txtRechercheNom.Text, txtRecherchePrenom.Text);
+            if(Util.isNULL(lp))
             {
                 labelRecherche.Text = "Aucun patient trouvé";
             }
             else
             {
-                txtNAS.Text = p.NuméroAssuranceMaladie;
+                for (int i = 0; i < lp.Count(); i++)
+                {
+                    lbPatients.Items.Add(lp.ElementAt(i));
+                }
+                /*txtNAS.Text = p.NuméroAssuranceMaladie;
                 txtNomPatients.Text = p.Nom;
                 txtPrenomPatient.Text = p.Prénom;
                 txtAdressePatient.Text = p.Adresse;
                 txtTelephonePatient.Text = p.NuméroTéléphone;
-                dateNaissance.Value = p.DateNaissance;
+                dateNaissance.Value = p.DateNaissance;*/
             }
         }
     }
