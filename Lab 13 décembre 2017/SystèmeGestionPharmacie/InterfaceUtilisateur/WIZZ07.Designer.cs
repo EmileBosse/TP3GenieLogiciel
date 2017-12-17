@@ -52,7 +52,7 @@
             this.btnCancelMedicament.Name = "btnCancelMedicament";
             this.btnCancelMedicament.Size = new System.Drawing.Size(75, 23);
             this.btnCancelMedicament.TabIndex = 27;
-            this.btnCancelMedicament.Text = "Cancel";
+            this.btnCancelMedicament.Text = "Annuler";
             this.btnCancelMedicament.UseVisualStyleBackColor = true;
             this.btnCancelMedicament.Click += new System.EventHandler(this.btnCancelMedicament_Click);
             // 
@@ -125,6 +125,7 @@
             this.Controls.Add(this.btnPrecedentMedicament);
             this.Controls.Add(this.listMedicament);
             this.Name = "WIZZ07";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assistant Renouvellement (Étape 2)";
             this.ResumeLayout(false);
             this.PerformLayout();

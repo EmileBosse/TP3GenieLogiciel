@@ -212,7 +212,7 @@
             this.btnCancelMedicament.Name = "btnCancelMedicament";
             this.btnCancelMedicament.Size = new System.Drawing.Size(75, 23);
             this.btnCancelMedicament.TabIndex = 21;
-            this.btnCancelMedicament.Text = "Cancel";
+            this.btnCancelMedicament.Text = "Annuler";
             this.btnCancelMedicament.UseVisualStyleBackColor = true;
             this.btnCancelMedicament.Click += new System.EventHandler(this.btnCancelMedicament_Click);
             // 
@@ -346,6 +346,7 @@
             this.Controls.Add(this.btnPrecedentMedicament);
             this.Controls.Add(this.gbMedicamentInfo);
             this.Name = "WIZZ04";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assistant Prescription (Étape 3)";
             this.gbMedicamentInfo.ResumeLayout(false);
             this.gbMedicamentInfo.PerformLayout();

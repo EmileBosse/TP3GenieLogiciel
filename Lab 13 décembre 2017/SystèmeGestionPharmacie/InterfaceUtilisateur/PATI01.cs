@@ -24,5 +24,12 @@ namespace SystèmeGestionPharmacie
             dlgAccueil.Show();
             Close();
         }
+
+        private void btnAjouterPatient_Click(object sender, EventArgs e)
+        {
+            PATI02 dlgAjoutPatient = new PATI02 { Tag = this };
+            dlgAjoutPatient.Show(this);
+            Hide();
+        }
     }
 }

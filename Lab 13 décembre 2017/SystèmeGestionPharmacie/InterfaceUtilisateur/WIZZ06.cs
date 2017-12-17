@@ -28,21 +28,23 @@ namespace SystèmeGestionPharmacie
 
         private void btnSuivantPrescription_Click(object sender, EventArgs e)
         {
-            WIZZ07 c = new WIZZ07(this);
+            // SUIVANT = WIZZ07
+            WIZZ07 c = new WIZZ07(this) { Tag = this};
             c.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btnPrecedentPrescription_Click(object sender, EventArgs e)
         {
+            // PRECEDENT = WIZZ01
             creator.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btnCancelPrescription_Click(object sender, EventArgs e)
         {
             CloseCreator();
-            this.Close();
+            Close();
         }
     }
 }

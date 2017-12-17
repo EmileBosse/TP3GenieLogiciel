@@ -49,10 +49,12 @@ namespace SystèmeGestionPharmacie
 
         private void btnPrecedentPrescription_Click(object sender, EventArgs e)
         {
+            // PRECEDENT = WIZZ03
             if (creatorP != null)
             {
                 creatorP.Show();
             }
+            // PRECEDENT = WIZZ07
             else if (creatorR != null)
             {
                 creatorR.Show();
@@ -63,7 +65,9 @@ namespace SystèmeGestionPharmacie
         private void btnTerminerPrescription_Click(object sender, EventArgs e)
         {
             enregistrerPrescription();
-            this.Close();
+            var dlgPrescriptions = (PRES01)Tag;
+            dlgPrescriptions.Show();
+            Close();
         }
 
         private void enregistrerPrescription()

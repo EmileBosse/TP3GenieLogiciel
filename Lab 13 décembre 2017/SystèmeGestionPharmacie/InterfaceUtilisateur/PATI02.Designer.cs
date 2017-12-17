@@ -159,6 +159,7 @@
             this.btnAnnuler.TabIndex = 69;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnAjouter
             // 
@@ -190,6 +191,7 @@
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.lblNumero);
             this.Name = "PATI02";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajout d\'un patient";
             this.ResumeLayout(false);
             this.PerformLayout();

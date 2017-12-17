@@ -224,6 +224,7 @@
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.lblNumero);
             this.Name = "MEDI02";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajout d\'un médicament";
             ((System.ComponentModel.ISupportInitialize)(this.udnUnitePosologie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udnJoursPosologie)).EndInit();
