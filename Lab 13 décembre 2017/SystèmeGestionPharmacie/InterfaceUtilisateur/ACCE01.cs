@@ -33,7 +33,7 @@ namespace SystèmeGestionPharmacie
             {
                 ACCE02 aCCE02 = new ACCE02();
                 aCCE02.Show();
-                this.Close();
+                this.Hide();
             }
         }
     }
