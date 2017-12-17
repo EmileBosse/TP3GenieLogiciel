@@ -17,7 +17,7 @@ namespace SystèmeGestionPharmacie
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ACCE01());
+            Application.Run(new ACCE02());
         }
     }
 }
