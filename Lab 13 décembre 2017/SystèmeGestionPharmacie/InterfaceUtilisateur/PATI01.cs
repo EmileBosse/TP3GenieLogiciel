@@ -39,7 +39,7 @@ namespace SystèmeGestionPharmacie
             {
                 for (int i = 0; i < lp.Count(); i++)
                 {
-                    lbPatients.Items.Add(lp.ElementAt(i));
+                    lbPatients.Items.Add((lp.ElementAt(i)).Nom+" "+(lp.ElementAt(i)).Prénom);
                 }
                 /*txtNAS.Text = p.NuméroAssuranceMaladie;
                 txtNomPatients.Text = p.Nom;
