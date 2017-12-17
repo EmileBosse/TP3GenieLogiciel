@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDateNaissancePatient = new System.Windows.Forms.TextBox();
             this.chbPatientActif = new System.Windows.Forms.CheckBox();
             this.txtTelephonePatient = new System.Windows.Forms.TextBox();
             this.txtAdressePatient = new System.Windows.Forms.TextBox();
@@ -43,6 +42,7 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
+            this.dateNaissance = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label4
@@ -53,13 +53,6 @@
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 63;
             this.label4.Text = "Date naissance";
-            // 
-            // txtDateNaissancePatient
-            // 
-            this.txtDateNaissancePatient.Location = new System.Drawing.Point(103, 142);
-            this.txtDateNaissancePatient.Name = "txtDateNaissancePatient";
-            this.txtDateNaissancePatient.Size = new System.Drawing.Size(100, 20);
-            this.txtDateNaissancePatient.TabIndex = 62;
             // 
             // chbPatientActif
             // 
@@ -168,16 +161,24 @@
             this.btnAjouter.TabIndex = 68;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
+            // dateNaissance
+            // 
+            this.dateNaissance.Location = new System.Drawing.Point(103, 145);
+            this.dateNaissance.Name = "dateNaissance";
+            this.dateNaissance.Size = new System.Drawing.Size(200, 20);
+            this.dateNaissance.TabIndex = 70;
             // 
             // PATI02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 224);
+            this.Controls.Add(this.dateNaissance);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDateNaissancePatient);
             this.Controls.Add(this.chbPatientActif);
             this.Controls.Add(this.txtTelephonePatient);
             this.Controls.Add(this.txtAdressePatient);
@@ -199,7 +200,6 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtDateNaissancePatient;
         private System.Windows.Forms.CheckBox chbPatientActif;
         private System.Windows.Forms.TextBox txtTelephonePatient;
         private System.Windows.Forms.TextBox txtAdressePatient;
@@ -213,5 +213,6 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.DateTimePicker dateNaissance;
     }
 }

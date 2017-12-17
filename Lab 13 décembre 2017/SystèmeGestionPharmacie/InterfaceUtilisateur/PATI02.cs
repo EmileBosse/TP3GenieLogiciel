@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystèmeGestionPharmacie.Logique;
+using SystèmeGestionPharmacie.DAL.MSSQL;
 
 namespace SystèmeGestionPharmacie
 {
@@ -15,6 +17,27 @@ namespace SystèmeGestionPharmacie
         public PATI02()
         {
             InitializeComponent();
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            PatientMapper pM = new PatientMapper();
+            Patient p = new Patient
+            {
+                NuméroAssuranceMaladie = txtNAS.Text,
+                Nom = txtNomPatient.Text,
+                Prénom = txtPrenomPatient.Text,
+                Adresse = txtAdressePatient.Text,
+                NuméroTéléphone = txtTelephonePatient.Text,
+                DateNaissance = dateNaissance.Value
+            };
+            if(pM.Insert(p) > 0)
+            {
+                System.Windows.Forms.MessageBox.Show("Succès ! Patient ajouté !");
+                this.Hide();
+            }
+            System.Windows.Forms.MessageBox.Show("Erreur ! Patient non ajouté !");
+
         }
     }
 }
