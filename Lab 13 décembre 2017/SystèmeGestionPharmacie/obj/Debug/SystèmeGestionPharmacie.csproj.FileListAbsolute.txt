@@ -62,3 +62,4 @@ C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\Sy
 C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.exe
 C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\bin\Debug\SystèmeGestionPharmacie.pdb
 >>>>>>> 53c956919be8d07f2cff8035096ef2f54128c369
+C:\Users\EmileBosse\Desktop\MercrediAM\TP3GenieLogiciel\Lab 13 décembre 2017\SystèmeGestionPharmacie\obj\Debug\SystèmeGestionPharmacie.InterfaceUtilisateur.ACCE02.resources
