@@ -16,5 +16,12 @@ namespace SystèmeGestionPharmacie
         {
             InitializeComponent();
         }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            var dlgPhar = (PHAR01)Tag;
+            dlgPhar.Show();
+            Close();
+        }
     }
 }

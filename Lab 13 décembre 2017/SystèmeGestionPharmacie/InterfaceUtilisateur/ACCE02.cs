@@ -16,7 +16,6 @@ namespace SystèmeGestionPharmacie.InterfaceUtilisateur
             MEDI01 dlgMedicaments = new MEDI01 {Tag = this};
             dlgMedicaments.Show(this);
             Hide();
-
         }
 
         private void btnMedecins_Click(object sender, EventArgs e)
@@ -42,7 +41,7 @@ namespace SystèmeGestionPharmacie.InterfaceUtilisateur
 
         private void btnPrescriptions_Click(object sender, EventArgs e)
         {
-            PRES01 dlgPrescriptions = new PRES01 { Tag = this};
+            PRES01 dlgPrescriptions = new PRES01 { Tag = this };
             dlgPrescriptions.Show();
             Hide();
         }

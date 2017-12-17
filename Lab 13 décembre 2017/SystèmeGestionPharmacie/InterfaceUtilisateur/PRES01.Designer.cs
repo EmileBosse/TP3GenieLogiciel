@@ -249,6 +249,7 @@
             this.btnNouvellePrescription.Text = "Entrer prescription";
             this.btnNouvellePrescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNouvellePrescription.UseVisualStyleBackColor = true;
+            this.btnNouvellePrescription.Click += new System.EventHandler(this.btnNouvellePrescription_Click);
             // 
             // btnRetour
             // 
@@ -271,6 +272,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbPrescriptions);
             this.Name = "PRES01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de prescriptions";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

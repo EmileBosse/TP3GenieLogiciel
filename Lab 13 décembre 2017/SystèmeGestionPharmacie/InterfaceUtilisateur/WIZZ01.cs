@@ -19,21 +19,25 @@ namespace SystèmeGestionPharmacie
 
         public void CloseCreator()
         {
-            this.Close();
+            var dlgPrescriptions = (PRES01)Tag;
+            dlgPrescriptions.Show();
+            Close();
         }
 
         private void btnNvlPrescription_Click(object sender, EventArgs e)
         {
-            WIZZ02 c = new WIZZ02(this);
+            // SUIVANT = WIZZ02
+            WIZZ02 c = new WIZZ02(this) { Tag = this };
             c.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btnRenouveler_Click(object sender, EventArgs e)
         {
+            // SUIVANT = WIZZ 06
             WIZZ06 c = new WIZZ06(this);
-            c.Show();
-            this.Hide();
+            c.ShowDialog();
+            Hide();
         }
     }
 }

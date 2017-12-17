@@ -24,5 +24,12 @@ namespace SystèmeGestionPharmacie
             dlgAccueil.Show();
             Close();
         }
+
+        private void btnNouvellePrescription_Click(object sender, EventArgs e)
+        {
+            var dlgWizard = new WIZZ01() { Tag = this } ;
+            dlgWizard.Show();
+            Hide();
+        }
     }
 }

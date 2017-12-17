@@ -24,5 +24,12 @@ namespace SystèmeGestionPharmacie
             dlgAccueil.Show();
             Close();
         }
+
+        private void btnAjouterPharmacie_Click(object sender, EventArgs e)
+        {
+            PHAR02 dlgAjoutPharmacie = new PHAR02 { Tag = this };
+            dlgAjoutPharmacie.Show(this);
+            Hide();
+        }
     }
 }
