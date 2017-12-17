@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.chbMedicamentActif = new System.Windows.Forms.CheckBox();
-            this.txtPrixVente = new System.Windows.Forms.TextBox();
-            this.txtEndroit = new System.Windows.Forms.TextBox();
-            this.txtManiereLivraison = new System.Windows.Forms.TextBox();
-            this.txtNomMedicament = new System.Windows.Forms.TextBox();
-            this.txtNumeroMedicament = new System.Windows.Forms.TextBox();
+            this.txtDateNaissancePatient = new System.Windows.Forms.TextBox();
+            this.chbPatientActif = new System.Windows.Forms.CheckBox();
+            this.txtTelephonePatient = new System.Windows.Forms.TextBox();
+            this.txtAdressePatient = new System.Windows.Forms.TextBox();
+            this.txtPrenomPatient = new System.Windows.Forms.TextBox();
+            this.txtNomPatient = new System.Windows.Forms.TextBox();
+            this.txtNAS = new System.Windows.Forms.TextBox();
             this.lblPrixVente = new System.Windows.Forms.Label();
             this.lblEndroit = new System.Windows.Forms.Label();
             this.lblManiereLivraison = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -54,57 +54,57 @@
             this.label4.TabIndex = 63;
             this.label4.Text = "Date naissance";
             // 
-            // textBox4
+            // txtDateNaissancePatient
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 142);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 62;
+            this.txtDateNaissancePatient.Location = new System.Drawing.Point(103, 142);
+            this.txtDateNaissancePatient.Name = "txtDateNaissancePatient";
+            this.txtDateNaissancePatient.Size = new System.Drawing.Size(100, 20);
+            this.txtDateNaissancePatient.TabIndex = 62;
             // 
-            // chbMedicamentActif
+            // chbPatientActif
             // 
-            this.chbMedicamentActif.AutoSize = true;
-            this.chbMedicamentActif.Location = new System.Drawing.Point(103, 168);
-            this.chbMedicamentActif.Name = "chbMedicamentActif";
-            this.chbMedicamentActif.Size = new System.Drawing.Size(47, 17);
-            this.chbMedicamentActif.TabIndex = 61;
-            this.chbMedicamentActif.Text = "Actif";
-            this.chbMedicamentActif.UseVisualStyleBackColor = true;
+            this.chbPatientActif.AutoSize = true;
+            this.chbPatientActif.Location = new System.Drawing.Point(103, 168);
+            this.chbPatientActif.Name = "chbPatientActif";
+            this.chbPatientActif.Size = new System.Drawing.Size(47, 17);
+            this.chbPatientActif.TabIndex = 61;
+            this.chbPatientActif.Text = "Actif";
+            this.chbPatientActif.UseVisualStyleBackColor = true;
             // 
-            // txtPrixVente
+            // txtTelephonePatient
             // 
-            this.txtPrixVente.Location = new System.Drawing.Point(103, 116);
-            this.txtPrixVente.Name = "txtPrixVente";
-            this.txtPrixVente.Size = new System.Drawing.Size(100, 20);
-            this.txtPrixVente.TabIndex = 60;
+            this.txtTelephonePatient.Location = new System.Drawing.Point(103, 116);
+            this.txtTelephonePatient.Name = "txtTelephonePatient";
+            this.txtTelephonePatient.Size = new System.Drawing.Size(100, 20);
+            this.txtTelephonePatient.TabIndex = 60;
             // 
-            // txtEndroit
+            // txtAdressePatient
             // 
-            this.txtEndroit.Location = new System.Drawing.Point(103, 90);
-            this.txtEndroit.Name = "txtEndroit";
-            this.txtEndroit.Size = new System.Drawing.Size(208, 20);
-            this.txtEndroit.TabIndex = 59;
+            this.txtAdressePatient.Location = new System.Drawing.Point(103, 90);
+            this.txtAdressePatient.Name = "txtAdressePatient";
+            this.txtAdressePatient.Size = new System.Drawing.Size(208, 20);
+            this.txtAdressePatient.TabIndex = 59;
             // 
-            // txtManiereLivraison
+            // txtPrenomPatient
             // 
-            this.txtManiereLivraison.Location = new System.Drawing.Point(103, 64);
-            this.txtManiereLivraison.Name = "txtManiereLivraison";
-            this.txtManiereLivraison.Size = new System.Drawing.Size(208, 20);
-            this.txtManiereLivraison.TabIndex = 58;
+            this.txtPrenomPatient.Location = new System.Drawing.Point(103, 64);
+            this.txtPrenomPatient.Name = "txtPrenomPatient";
+            this.txtPrenomPatient.Size = new System.Drawing.Size(208, 20);
+            this.txtPrenomPatient.TabIndex = 58;
             // 
-            // txtNomMedicament
+            // txtNomPatient
             // 
-            this.txtNomMedicament.Location = new System.Drawing.Point(103, 38);
-            this.txtNomMedicament.Name = "txtNomMedicament";
-            this.txtNomMedicament.Size = new System.Drawing.Size(208, 20);
-            this.txtNomMedicament.TabIndex = 57;
+            this.txtNomPatient.Location = new System.Drawing.Point(103, 38);
+            this.txtNomPatient.Name = "txtNomPatient";
+            this.txtNomPatient.Size = new System.Drawing.Size(208, 20);
+            this.txtNomPatient.TabIndex = 57;
             // 
-            // txtNumeroMedicament
+            // txtNAS
             // 
-            this.txtNumeroMedicament.Location = new System.Drawing.Point(103, 12);
-            this.txtNumeroMedicament.Name = "txtNumeroMedicament";
-            this.txtNumeroMedicament.Size = new System.Drawing.Size(70, 20);
-            this.txtNumeroMedicament.TabIndex = 56;
+            this.txtNAS.Location = new System.Drawing.Point(103, 12);
+            this.txtNAS.Name = "txtNAS";
+            this.txtNAS.Size = new System.Drawing.Size(70, 20);
+            this.txtNAS.TabIndex = 56;
             // 
             // lblPrixVente
             // 
@@ -151,39 +151,39 @@
             this.lblNumero.TabIndex = 51;
             this.lblNumero.Text = "NAS";
             // 
-            // button2
+            // btnAnnuler
             // 
-            this.button2.Location = new System.Drawing.Point(253, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 69;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Location = new System.Drawing.Point(253, 194);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.TabIndex = 69;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAjouter
             // 
-            this.button1.Location = new System.Drawing.Point(172, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 68;
-            this.button1.Text = "Ajouter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAjouter.Location = new System.Drawing.Point(172, 194);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(75, 23);
+            this.btnAjouter.TabIndex = 68;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
             // 
             // PATI02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 224);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.chbMedicamentActif);
-            this.Controls.Add(this.txtPrixVente);
-            this.Controls.Add(this.txtEndroit);
-            this.Controls.Add(this.txtManiereLivraison);
-            this.Controls.Add(this.txtNomMedicament);
-            this.Controls.Add(this.txtNumeroMedicament);
+            this.Controls.Add(this.txtDateNaissancePatient);
+            this.Controls.Add(this.chbPatientActif);
+            this.Controls.Add(this.txtTelephonePatient);
+            this.Controls.Add(this.txtAdressePatient);
+            this.Controls.Add(this.txtPrenomPatient);
+            this.Controls.Add(this.txtNomPatient);
+            this.Controls.Add(this.txtNAS);
             this.Controls.Add(this.lblPrixVente);
             this.Controls.Add(this.lblEndroit);
             this.Controls.Add(this.lblManiereLivraison);
@@ -199,19 +199,19 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.CheckBox chbMedicamentActif;
-        private System.Windows.Forms.TextBox txtPrixVente;
-        private System.Windows.Forms.TextBox txtEndroit;
-        private System.Windows.Forms.TextBox txtManiereLivraison;
-        private System.Windows.Forms.TextBox txtNomMedicament;
-        private System.Windows.Forms.TextBox txtNumeroMedicament;
+        private System.Windows.Forms.TextBox txtDateNaissancePatient;
+        private System.Windows.Forms.CheckBox chbPatientActif;
+        private System.Windows.Forms.TextBox txtTelephonePatient;
+        private System.Windows.Forms.TextBox txtAdressePatient;
+        private System.Windows.Forms.TextBox txtPrenomPatient;
+        private System.Windows.Forms.TextBox txtNomPatient;
+        private System.Windows.Forms.TextBox txtNAS;
         private System.Windows.Forms.Label lblPrixVente;
         private System.Windows.Forms.Label lblEndroit;
         private System.Windows.Forms.Label lblManiereLivraison;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnAjouter;
     }
 }
