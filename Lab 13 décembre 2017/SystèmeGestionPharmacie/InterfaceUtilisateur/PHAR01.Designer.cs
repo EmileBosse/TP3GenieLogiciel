@@ -252,6 +252,7 @@
             this.btnRetour.TabIndex = 60;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // PHAR01
             // 
@@ -265,6 +266,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbPharmacies);
             this.Name = "PHAR01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de pharmacies";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

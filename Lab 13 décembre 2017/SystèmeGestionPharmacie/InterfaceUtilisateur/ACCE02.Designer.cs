@@ -1,4 +1,4 @@
-﻿namespace SystèmeGestionPharmacie
+﻿namespace SystèmeGestionPharmacie.InterfaceUtilisateur
 {
     partial class ACCE02
     {
@@ -48,6 +48,7 @@
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // btnPharmacies
             // 
@@ -60,6 +61,7 @@
             this.btnPharmacies.Text = "Pharmacies";
             this.btnPharmacies.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPharmacies.UseVisualStyleBackColor = true;
+            this.btnPharmacies.Click += new System.EventHandler(this.btnPharmacies_Click);
             // 
             // btnPatients
             // 
@@ -72,6 +74,7 @@
             this.btnPatients.Text = "Patients";
             this.btnPatients.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPatients.UseVisualStyleBackColor = true;
+            this.btnPatients.Click += new System.EventHandler(this.btnPatients_Click);
             // 
             // btnMedecins
             // 
@@ -84,6 +87,7 @@
             this.btnMedecins.Text = "Médecins";
             this.btnMedecins.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedecins.UseVisualStyleBackColor = true;
+            this.btnMedecins.Click += new System.EventHandler(this.btnMedecins_Click);
             // 
             // btnPrescriptions
             // 
@@ -95,6 +99,7 @@
             this.btnPrescriptions.TabIndex = 4;
             this.btnPrescriptions.Text = "Prescriptions";
             this.btnPrescriptions.UseVisualStyleBackColor = true;
+            this.btnPrescriptions.Click += new System.EventHandler(this.btnPrescriptions_Click);
             // 
             // btnMedicaments
             // 
@@ -107,6 +112,7 @@
             this.btnMedicaments.Text = "Médicaments";
             this.btnMedicaments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedicaments.UseVisualStyleBackColor = true;
+            this.btnMedicaments.Click += new System.EventHandler(this.btnMedicaments_Click);
             // 
             // ACCE02
             // 
@@ -120,6 +126,7 @@
             this.Controls.Add(this.btnPrescriptions);
             this.Controls.Add(this.btnMedicaments);
             this.Name = "ACCE02";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
             this.ResumeLayout(false);
 

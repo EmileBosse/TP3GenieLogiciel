@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystèmeGestionPharmacie.InterfaceUtilisateur;
 
 namespace SystèmeGestionPharmacie
 {
@@ -15,6 +16,13 @@ namespace SystèmeGestionPharmacie
         public PRES01()
         {
             InitializeComponent();
+        }
+
+        private void btnRetour_Click(object sender, EventArgs e)
+        {
+            var dlgAccueil = (ACCE02)Tag;
+            dlgAccueil.Show();
+            Close();
         }
     }
 }

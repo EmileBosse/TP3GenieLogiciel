@@ -73,6 +73,7 @@
             this.btnAjouterMedecin.TabIndex = 48;
             this.btnAjouterMedecin.Text = "Ajouter";
             this.btnAjouterMedecin.UseVisualStyleBackColor = true;
+            this.btnAjouterMedecin.Click += new System.EventHandler(this.btnAjouterMedecin_Click);
             // 
             // panel2
             // 
@@ -272,6 +273,7 @@
             this.btnRetour.TabIndex = 61;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // MEDE01
             // 
@@ -285,6 +287,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbMedecins);
             this.Name = "MEDE01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de médecins";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

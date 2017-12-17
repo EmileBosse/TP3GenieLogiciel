@@ -307,6 +307,7 @@
             this.btnAjouterMedicament.TabIndex = 42;
             this.btnAjouterMedicament.Text = "Ajouter";
             this.btnAjouterMedicament.UseVisualStyleBackColor = true;
+            this.btnAjouterMedicament.Click += new System.EventHandler(this.btnAjouterMedicament_Click);
             // 
             // btnRetour
             // 
@@ -316,6 +317,7 @@
             this.btnRetour.TabIndex = 61;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // MEDI01
             // 
@@ -330,6 +332,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbMedicaments);
             this.Name = "MEDI01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion des médicaments";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

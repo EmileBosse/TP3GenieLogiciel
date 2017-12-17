@@ -272,6 +272,7 @@
             this.btbRetour.TabIndex = 61;
             this.btbRetour.Text = "Retour";
             this.btbRetour.UseVisualStyleBackColor = true;
+            this.btbRetour.Click += new System.EventHandler(this.btbRetour_Click);
             // 
             // PATI01
             // 
@@ -285,6 +286,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbPatients);
             this.Name = "PATI01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion de patients";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
