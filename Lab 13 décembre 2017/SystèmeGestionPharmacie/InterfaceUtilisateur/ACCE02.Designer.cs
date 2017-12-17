@@ -29,96 +29,96 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ACCE02));
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
+            this.btnPharmacies = new System.Windows.Forms.Button();
+            this.btnPatients = new System.Windows.Forms.Button();
+            this.btnMedecins = new System.Windows.Forms.Button();
+            this.btnPrescriptions = new System.Windows.Forms.Button();
+            this.btnMedicaments = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button6
+            // btnQuitter
             // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(600, 107);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(193, 73);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Quitter";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnQuitter.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitter.Image")));
+            this.btnQuitter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnQuitter.Location = new System.Drawing.Point(600, 107);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(193, 73);
+            this.btnQuitter.TabIndex = 8;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuitter.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnPharmacies
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(600, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(190, 89);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Pharmacies";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPharmacies.Image = ((System.Drawing.Image)(resources.GetObject("btnPharmacies.Image")));
+            this.btnPharmacies.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPharmacies.Location = new System.Drawing.Point(600, 12);
+            this.btnPharmacies.Name = "btnPharmacies";
+            this.btnPharmacies.Size = new System.Drawing.Size(190, 89);
+            this.btnPharmacies.TabIndex = 7;
+            this.btnPharmacies.Text = "Pharmacies";
+            this.btnPharmacies.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPharmacies.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPatients
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(404, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(190, 89);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Patients";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPatients.Image = ((System.Drawing.Image)(resources.GetObject("btnPatients.Image")));
+            this.btnPatients.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPatients.Location = new System.Drawing.Point(404, 12);
+            this.btnPatients.Name = "btnPatients";
+            this.btnPatients.Size = new System.Drawing.Size(190, 89);
+            this.btnPatients.TabIndex = 6;
+            this.btnPatients.Text = "Patients";
+            this.btnPatients.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPatients.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnMedecins
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(208, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(190, 89);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Médecins";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMedecins.Image = ((System.Drawing.Image)(resources.GetObject("btnMedecins.Image")));
+            this.btnMedecins.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMedecins.Location = new System.Drawing.Point(208, 12);
+            this.btnMedecins.Name = "btnMedecins";
+            this.btnMedecins.Size = new System.Drawing.Size(190, 89);
+            this.btnMedecins.TabIndex = 5;
+            this.btnMedecins.Text = "Médecins";
+            this.btnMedecins.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedecins.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnPrescriptions
             // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(12, 107);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(582, 73);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Prescriptions";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPrescriptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrescriptions.Image")));
+            this.btnPrescriptions.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrescriptions.Location = new System.Drawing.Point(12, 107);
+            this.btnPrescriptions.Name = "btnPrescriptions";
+            this.btnPrescriptions.Size = new System.Drawing.Size(582, 73);
+            this.btnPrescriptions.TabIndex = 4;
+            this.btnPrescriptions.Text = "Prescriptions";
+            this.btnPrescriptions.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnMedicaments
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 89);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Médicaments";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMedicaments.Image = ((System.Drawing.Image)(resources.GetObject("btnMedicaments.Image")));
+            this.btnMedicaments.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMedicaments.Location = new System.Drawing.Point(12, 12);
+            this.btnMedicaments.Name = "btnMedicaments";
+            this.btnMedicaments.Size = new System.Drawing.Size(190, 89);
+            this.btnMedicaments.TabIndex = 0;
+            this.btnMedicaments.Text = "Médicaments";
+            this.btnMedicaments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedicaments.UseVisualStyleBackColor = true;
             // 
             // ACCE02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 192);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnQuitter);
+            this.Controls.Add(this.btnPharmacies);
+            this.Controls.Add(this.btnPatients);
+            this.Controls.Add(this.btnMedecins);
+            this.Controls.Add(this.btnPrescriptions);
+            this.Controls.Add(this.btnMedicaments);
             this.Name = "ACCE02";
             this.Text = "Accueil";
             this.ResumeLayout(false);
@@ -127,11 +127,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnMedicaments;
+        private System.Windows.Forms.Button btnPrescriptions;
+        private System.Windows.Forms.Button btnMedecins;
+        private System.Windows.Forms.Button btnPatients;
+        private System.Windows.Forms.Button btnPharmacies;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystèmeGestionPharmacie.Logique;
+using SystèmeGestionPharmacie.DAL.MSSQL;
 
 namespace SystèmeGestionPharmacie
 {
@@ -19,7 +21,19 @@ namespace SystèmeGestionPharmacie
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
+            UtilisateurMapper uM = new UtilisateurMapper();
+            Utilisateur u = uM.Find(txtLogin.Text, txtLogin.Text);
 
+            if(Util.isNULL(u))
+            {
+                labelMsg.Text = "Erreur : les identifiants sont incorrects";
+            }
+            else
+            {
+                ACCE02 aCCE02 = new ACCE02();
+                aCCE02.Show();
+                this.Close();
+            }
         }
     }
 }

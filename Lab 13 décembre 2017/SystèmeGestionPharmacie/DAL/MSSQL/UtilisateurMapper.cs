@@ -33,6 +33,19 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lUtilisateur;
         }
 
+        public Utilisateur Find(String login, String password)
+        {
+            Utilisateur lUtilisateur;
+
+                DataRow row = DataBase.SelectRow("[tblUtilisateur]","login='"+login+"' and password='"+password+"'");
+                if (Util.isNULL(row))
+                    return null;
+                lUtilisateur = this.FillFields(row);
+                LoadedMap.Add(lUtilisateur.ID, lUtilisateur);
+
+            return lUtilisateur;
+        }
+
 
         //--------------------------------------------------------------------
         private Utilisateur FillFields(DataRow pDataRow)

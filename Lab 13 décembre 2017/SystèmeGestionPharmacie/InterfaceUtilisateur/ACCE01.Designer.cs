@@ -34,6 +34,7 @@
             this.lblCompte = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
+            this.labelMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -88,11 +89,21 @@
             this.txtLogin.Size = new System.Drawing.Size(199, 20);
             this.txtLogin.TabIndex = 6;
             // 
+            // labelMsg
+            // 
+            this.labelMsg.AutoSize = true;
+            this.labelMsg.ForeColor = System.Drawing.Color.Red;
+            this.labelMsg.Location = new System.Drawing.Point(13, 130);
+            this.labelMsg.Name = "labelMsg";
+            this.labelMsg.Size = new System.Drawing.Size(0, 13);
+            this.labelMsg.TabIndex = 12;
+            // 
             // ACCE01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 169);
+            this.Controls.Add(this.labelMsg);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnConnexion);
             this.Controls.Add(this.lblPassword);
@@ -114,5 +125,6 @@
         private System.Windows.Forms.Label lblCompte;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.Label labelMsg;
     }
 }
