@@ -272,6 +272,7 @@
             this.lbMedecins.Name = "lbMedecins";
             this.lbMedecins.Size = new System.Drawing.Size(308, 355);
             this.lbMedecins.TabIndex = 45;
+            this.lbMedecins.SelectedIndexChanged += new System.EventHandler(this.lbMedecins_SelectedIndexChanged);
             // 
             // MEDE01
             // 

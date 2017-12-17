@@ -15,6 +15,8 @@ namespace SystèmeGestionPharmacie
 {
     public partial class MEDE01 : Form
     {
+        private List<Médecin> ms;
+
         public MEDE01()
         {
             InitializeComponent();
@@ -36,19 +38,44 @@ namespace SystèmeGestionPharmacie
         {
             lbMedecins.Items.Clear();
             MédecinMapper mM = new MédecinMapper();
-            List<Médecin> ms = mM.Find(txtRechercheNumero.Text, txtRechercheNom.Text, txtRecherchePrenom.Text);
+            ms = mM.Find(txtRechercheNumero.Text, txtRechercheNom.Text, txtRecherchePrenom.Text);
 
             if (ms != null)
             {
                 for (int i = 0; i < ms.Count; i++)
                 {
-                    lbMedecins.Items.Add(ms[i].Nom+" "+ms[i].Prénom);
+                    lbMedecins.Items.Add(i+"   "+ms[i].Nom+" "+ms[i].Prénom);
                 }
             }
             else
             {
                 MessageBox.Show("Aucun résultat.");
             }
+        }
+
+        private void lbMedecins_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            remplirChampInfo(ms[lbMedecins.SelectedIndex]);
+        }
+
+        private void viderChampInfo()
+        {
+            txtNumeroMedecin.Text = "";
+            txtNomMedecin.Text = "";
+            txtPrenomMedecin.Text = "";
+            txtAdresse.Text = "";
+            txtTelephone.Text = "";
+            chbMedecinActif.Checked = false;
+        }
+
+        private void remplirChampInfo(Médecin m)
+        {
+            txtNumeroMedecin.Text = m.NuméroLicense;
+            txtNomMedecin.Text = m.Nom;
+            txtPrenomMedecin.Text = m.Prénom;
+            txtAdresse.Text = m.Adresse;
+            txtTelephone.Text = m.NuméroTéléphone;
+            chbMedecinActif.Checked = false;
         }
     }
 }

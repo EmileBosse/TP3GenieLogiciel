@@ -36,12 +36,13 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
         public List<Médecin> Find(String numero, String nom, String prenom)
         {
             String where = "";
+            bool ajouterAnd = false;
             if (numero != "" && nom != "" && prenom != "")
             {
                 where = "WHERE ";
-                if (numero != "") { where += ("numéroLicense="+numero); }
-                if (nom != "") { where += ("nom=" + nom); }
-                if (prenom != "") { where += ("prénom=" + prenom); }
+                if (numero != "") { where += ("numéroLicense="+numero); ajouterAnd = true; }
+                if (nom != "") { if (ajouterAnd) { where += ("and nom=" + nom); } else { where += ("nom=" + nom); } ajouterAnd = true; }
+                if (prenom != "") { if (ajouterAnd) { where += ("and prénom=" + prenom); } else { where += ("prénom=" + prenom); } }
             }
             
             DataTable table = DataBase.Select("SELECT * FROM dbo.tblMédecin "+where);
