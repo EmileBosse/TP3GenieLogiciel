@@ -26,7 +26,7 @@ namespace SystèmeGestionPharmacie
 
             if(Util.isNULL(u))
             {
-
+                labelMsg.Text = "Erreur : les identifiants sont incorrects";
             }
             else
             {
