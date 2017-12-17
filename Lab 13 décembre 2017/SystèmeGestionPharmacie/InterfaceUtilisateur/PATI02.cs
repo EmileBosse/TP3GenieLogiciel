@@ -39,13 +39,15 @@ namespace SystèmeGestionPharmacie
                 NuméroTéléphone = txtTelephonePatient.Text,
                 DateNaissance = dateNaissance.Value
             };
-            if(pM.Insert(p) > 0)
+            if (pM.Insert(p) > 0)
             {
                 System.Windows.Forms.MessageBox.Show("Succès ! Patient ajouté !");
                 this.Hide();
             }
-            System.Windows.Forms.MessageBox.Show("Erreur ! Patient non ajouté !");
-
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur ! Patient non ajouté !");
+            }
         }
     }
 }

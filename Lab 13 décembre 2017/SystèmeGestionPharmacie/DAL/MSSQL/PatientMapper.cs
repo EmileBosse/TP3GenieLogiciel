@@ -38,7 +38,23 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             List<Patient> lPatient = new List<Patient>();
             Patient p;
 
-                DataTable table = DataBase.Select("SELECT * FROM [tblPatient] WHERE Nom='"+nom+"' and Prénom='"+prenom+"'");
+            String query = "WHERE";
+            if (nom.Trim() != "")
+            {
+                query += " Nom ='" + nom + "'";
+                if (prenom.Trim() != "")
+                    query += " and Prenom='" + prenom + "'";
+            }
+            else
+            {
+                if (prenom.Trim() != "")
+                    query += " Prenom='" + prenom + "'";
+            }   
+
+            if (query.Equals("WHERE"))
+                query = "";
+
+                DataTable table = DataBase.Select("SELECT * FROM [tblPatient] " +query);
                 if (Util.isNULL(table))
                     return null;
 
