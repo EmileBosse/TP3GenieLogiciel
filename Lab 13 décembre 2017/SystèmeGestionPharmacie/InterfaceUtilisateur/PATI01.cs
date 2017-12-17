@@ -44,6 +44,7 @@ namespace SystèmeGestionPharmacie
             }
             else
             {
+                lbPatients.Items.Clear();
                 for (int i = 0; i < lp.Count(); i++)
                 {
                     lbPatients.Items.Add((i+1).ToString() +"    "+(lp.ElementAt(i)).Nom+" "+(lp.ElementAt(i)).Prénom+" "+(lp.ElementAt(i)).NuméroAssuranceMaladie);
