@@ -332,7 +332,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbMedicaments);
             this.Name = "MEDI01";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion des médicaments";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

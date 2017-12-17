@@ -83,6 +83,7 @@
             this.Controls.Add(this.btnRenouveler);
             this.Controls.Add(this.btnNvlPrescription);
             this.Name = "WIZZ01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assistant Prescription";
             this.ResumeLayout(false);
             this.PerformLayout();

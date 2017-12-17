@@ -19,6 +19,14 @@ namespace SystèmeGestionPharmacie
             InitializeComponent();
         }
 
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            var dlgPati = (PATI01)Tag;
+            dlgPati.Show();
+            Close();
+        }
+
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             PatientMapper pM = new PatientMapper();

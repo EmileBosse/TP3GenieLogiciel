@@ -71,6 +71,7 @@
             this.btnAjouterPharmacie.TabIndex = 58;
             this.btnAjouterPharmacie.Text = "Ajouter";
             this.btnAjouterPharmacie.UseVisualStyleBackColor = true;
+            this.btnAjouterPharmacie.Click += new System.EventHandler(this.btnAjouterPharmacie_Click);
             // 
             // panel2
             // 
@@ -266,7 +267,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbPharmacies);
             this.Name = "PHAR01";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de pharmacies";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

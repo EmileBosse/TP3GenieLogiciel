@@ -74,6 +74,7 @@
             this.btnAjouterPatient.TabIndex = 53;
             this.btnAjouterPatient.Text = "Ajouter";
             this.btnAjouterPatient.UseVisualStyleBackColor = true;
+            this.btnAjouterPatient.Click += new System.EventHandler(this.btnAjouterPatient_Click);
             // 
             // panel2
             // 
@@ -297,7 +298,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbPatients);
             this.Name = "PATI01";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de patients";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
