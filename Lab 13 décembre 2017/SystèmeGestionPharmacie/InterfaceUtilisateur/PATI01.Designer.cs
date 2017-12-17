@@ -32,7 +32,6 @@
             this.btnAjouterPatient = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDateNaissancePatient = new System.Windows.Forms.TextBox();
             this.chbPatientActif = new System.Windows.Forms.CheckBox();
             this.txtTelephonePatient = new System.Windows.Forms.TextBox();
             this.txtAdressePatient = new System.Windows.Forms.TextBox();
@@ -52,6 +51,8 @@
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.lbPatients = new System.Windows.Forms.ListBox();
             this.btbRetour = new System.Windows.Forms.Button();
+            this.dateNaissance = new System.Windows.Forms.DateTimePicker();
+            this.labelRecherche = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,8 +78,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dateNaissance);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtDateNaissancePatient);
             this.panel2.Controls.Add(this.chbPatientActif);
             this.panel2.Controls.Add(this.txtTelephonePatient);
             this.panel2.Controls.Add(this.txtAdressePatient);
@@ -103,13 +104,6 @@
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 50;
             this.label4.Text = "Date naissance";
-            // 
-            // txtDateNaissancePatient
-            // 
-            this.txtDateNaissancePatient.Location = new System.Drawing.Point(98, 149);
-            this.txtDateNaissancePatient.Name = "txtDateNaissancePatient";
-            this.txtDateNaissancePatient.Size = new System.Drawing.Size(100, 20);
-            this.txtDateNaissancePatient.TabIndex = 49;
             // 
             // chbPatientActif
             // 
@@ -203,6 +197,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelRecherche);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtRecherchePrenom);
             this.panel1.Controls.Add(this.btnRechercher);
@@ -237,6 +232,7 @@
             this.btnRechercher.TabIndex = 44;
             this.btnRechercher.Text = "Rechercher";
             this.btnRechercher.UseVisualStyleBackColor = true;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // label2
             // 
@@ -274,6 +270,21 @@
             this.btbRetour.Text = "Retour";
             this.btbRetour.UseVisualStyleBackColor = true;
             this.btbRetour.Click += new System.EventHandler(this.btbRetour_Click);
+            // 
+            // dateNaissance
+            // 
+            this.dateNaissance.Location = new System.Drawing.Point(99, 149);
+            this.dateNaissance.Name = "dateNaissance";
+            this.dateNaissance.Size = new System.Drawing.Size(200, 20);
+            this.dateNaissance.TabIndex = 51;
+            // 
+            // labelRecherche
+            // 
+            this.labelRecherche.AutoSize = true;
+            this.labelRecherche.Location = new System.Drawing.Point(180, 73);
+            this.labelRecherche.Name = "labelRecherche";
+            this.labelRecherche.Size = new System.Drawing.Size(0, 13);
+            this.labelRecherche.TabIndex = 47;
             // 
             // PATI01
             // 
@@ -320,8 +331,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtRechercheNom;
         private System.Windows.Forms.ListBox lbPatients;
-        private System.Windows.Forms.TextBox txtDateNaissancePatient;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btbRetour;
+        private System.Windows.Forms.DateTimePicker dateNaissance;
+        private System.Windows.Forms.Label labelRecherche;
     }
 }

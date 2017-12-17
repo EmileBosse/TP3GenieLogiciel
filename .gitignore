@@ -2,9 +2,29 @@
 # Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
 ################################################################################
 
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
+
 /Lab 13 décembre 2017/SystèmeGestionPharmacie/InterfaceUtilisateur/obj/Debug/SysPharmacie.csproj.CoreCompileInputs.cache
 /.vs/slnx.sqlite
 /Lab 13 décembre 2017/SystèmeGestionPharmacie/InterfaceUtilisateur/obj/Release/SysPharmacie.csproj.CoreCompileInputs.cache
 /Lab 13 décembre 2017/SystèmeGestionPharmacie/obj/Release/SystèmeGestionPharmacie.csproj.CoreCompileInputs.cache
 /Lab 13 décembre 2017/SystèmeGestionPharmacie/obj/Debug/
 /Lab 13 décembre 2017/SystèmeGestionPharmacie/obj/Debug/*
+/.vs/TP3GenieLogiciel2/v15/.suo
+/Lab 13 décembre 2017/.vs/SystèmeGestionPharmacie/v15/Server/sqlite3/storage.ide-shm
+/Lab 13 décembre 2017/.vs/SystèmeGestionPharmacie/v15/Server/sqlite3/storage.ide-wal
+/Lab 13 décembre 2017/.vs/SystèmeGestionPharmacie/v15/Server/sqlite3/db.lock
+/Lab 13 décembre 2017/.vs/SystèmeGestionPharmacie/v15/Server/sqlite3/storage.ide
+/Lab 13 décembre 2017/SystèmeGestionPharmacie/bin/Debug/SystèmeGestionPharmacie.exe
+/Lab 13 décembre 2017/SystèmeGestionPharmacie/bin/Debug/SystèmeGestionPharmacie.exe.config
+/Lab 13 décembre 2017/SystèmeGestionPharmacie/bin/Debug/SystèmeGestionPharmacie.pdb
