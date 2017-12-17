@@ -64,6 +64,7 @@
             this.btnModifierMedecin.TabIndex = 49;
             this.btnModifierMedecin.Text = "Modifier";
             this.btnModifierMedecin.UseVisualStyleBackColor = true;
+            this.btnModifierMedecin.Click += new System.EventHandler(this.btnModifierMedecin_Click);
             // 
             // btnAjouterMedecin
             // 

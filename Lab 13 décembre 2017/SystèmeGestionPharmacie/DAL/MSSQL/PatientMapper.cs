@@ -41,14 +41,14 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             String query = "WHERE";
             if (nom.Trim() != "")
             {
-                query += " Nom ='" + nom + "'";
+                query += " nom ='" + nom + "'";
                 if (prenom.Trim() != "")
-                    query += " and Prenom='" + prenom + "'";
+                    query += " and prénom='" + prenom + "'";
             }
             else
             {
                 if (prenom.Trim() != "")
-                    query += " Prenom='" + prenom + "'";
+                    query += " prénom='" + prenom + "'";
             }   
 
             if (query.Equals("WHERE"))

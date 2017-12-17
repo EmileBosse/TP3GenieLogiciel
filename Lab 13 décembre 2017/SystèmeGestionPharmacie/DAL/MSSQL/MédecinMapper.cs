@@ -1,5 +1,3 @@
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,15 +35,15 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
         {
             String where = "";
             bool ajouterAnd = false;
-            if (numero != "" && nom != "" && prenom != "")
+            if (numero != "" || nom != "" || prenom != "")
             {
                 where = "WHERE ";
-                if (numero != "") { where += ("numéroLicense="+numero); ajouterAnd = true; }
-                if (nom != "") { if (ajouterAnd) { where += ("and nom=" + nom); } else { where += ("nom=" + nom); } ajouterAnd = true; }
-                if (prenom != "") { if (ajouterAnd) { where += ("and prénom=" + prenom); } else { where += ("prénom=" + prenom); } }
+                if (numero != "") { where += ("numéroLicense='"+numero+"'"); ajouterAnd = true; }
+                if (nom != "") { if (ajouterAnd) { where += ("and nom='"+nom+"'"); } else { where += ("nom='"+nom+"'"); } ajouterAnd = true; }
+                if (prenom != "") { if (ajouterAnd) { where += ("and prénom='"+prenom+"'"); } else { where += ("prénom='"+prenom+"'"); } }
             }
             
-            DataTable table = DataBase.Select("SELECT * FROM dbo.tblMédecin "+where);
+            DataTable table = DataBase.Select("SELECT * FROM dbo.tblMédecin "+where+"ORDER BY nom");
             if (Util.isNULL(table))
                 return null;
 
