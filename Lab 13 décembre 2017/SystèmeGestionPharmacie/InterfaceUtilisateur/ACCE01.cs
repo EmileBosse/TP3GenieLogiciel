@@ -23,7 +23,7 @@ namespace SystèmeGestionPharmacie
         private void btnConnexion_Click(object sender, EventArgs e)
         {
             UtilisateurMapper uM = new UtilisateurMapper();
-            Utilisateur u = uM.Find(txtLogin.Text, txtLogin.Text);
+            Utilisateur u = uM.Find(txtLogin.Text, txtPassword.Text);
 
             if(Util.isNULL(u))
             {

@@ -36,8 +36,7 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
         public Utilisateur Find(String login, String password)
         {
             Utilisateur lUtilisateur;
-
-                DataRow row = DataBase.SelectRow("[tblUtilisateur]","login='"+login+"' and password='"+password+"'");
+                DataRow row = DataBase.SelectRow("[tblUtilisateur]", "NomConnexion='" + login+ "' and MotDePasse='" + password+"'");
                 if (Util.isNULL(row))
                     return null;
                 lUtilisateur = this.FillFields(row);
