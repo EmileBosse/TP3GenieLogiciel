@@ -307,6 +307,7 @@
             this.btnAjouterMedicament.TabIndex = 42;
             this.btnAjouterMedicament.Text = "Ajouter";
             this.btnAjouterMedicament.UseVisualStyleBackColor = true;
+            this.btnAjouterMedicament.Click += new System.EventHandler(this.btnAjouterMedicament_Click);
             // 
             // btnRetour
             // 

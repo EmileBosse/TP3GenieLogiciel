@@ -24,5 +24,12 @@ namespace SystèmeGestionPharmacie
             dlgAccueil.Show();
             Close();
         }
+
+        private void btnAjouterMedicament_Click(object sender, EventArgs e)
+        {
+            MEDI02 dlgAjoutMedicament = new MEDI02 { Tag = this };
+            dlgAjoutMedicament.Show(this);
+            Hide();
+        }
     }
 }

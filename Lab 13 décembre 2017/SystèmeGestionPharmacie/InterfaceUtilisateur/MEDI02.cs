@@ -16,5 +16,12 @@ namespace SystèmeGestionPharmacie
         {
             InitializeComponent();
         }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            var dlgMedi = (MEDI01)Tag;
+            dlgMedi.Show();
+            Close();
+        }
     }
 }

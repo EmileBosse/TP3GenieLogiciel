@@ -24,5 +24,10 @@ namespace SystèmeGestionPharmacie
             dlgAccueil.Show();
             Close();
         }
+
+        private void btnAjouterMedecin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

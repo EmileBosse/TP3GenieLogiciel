@@ -73,6 +73,7 @@
             this.btnAjouterMedecin.TabIndex = 48;
             this.btnAjouterMedecin.Text = "Ajouter";
             this.btnAjouterMedecin.UseVisualStyleBackColor = true;
+            this.btnAjouterMedecin.Click += new System.EventHandler(this.btnAjouterMedecin_Click);
             // 
             // panel2
             // 
