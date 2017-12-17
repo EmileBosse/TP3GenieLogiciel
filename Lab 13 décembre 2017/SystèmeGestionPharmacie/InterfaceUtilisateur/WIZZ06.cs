@@ -12,26 +12,36 @@ namespace SystèmeGestionPharmacie
 {
     public partial class WIZZ06 : Form
     {
-        public WIZZ06()
+        WIZZ01 creator;
+
+        public WIZZ06(WIZZ01 last)
         {
+            creator = last;
             InitializeComponent();
+        }
+
+        public void CloseCreator()
+        {
+            creator.CloseCreator();
+            creator.Close();
         }
 
         private void btnSuivantPrescription_Click(object sender, EventArgs e)
         {
-            WIZZ07 c = new WIZZ07();
+            WIZZ07 c = new WIZZ07(this);
             c.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnPrecedentPrescription_Click(object sender, EventArgs e)
         {
-            Parent.Show();
-            this.Close();
+            creator.Show();
+            this.Hide();
         }
 
         private void btnCancelPrescription_Click(object sender, EventArgs e)
         {
+            CloseCreator();
             this.Close();
         }
     }

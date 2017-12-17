@@ -35,7 +35,6 @@ namespace SystèmeGestionPharmacie
                 aCCE02.Show();
                 this.Close();
             }
-
         }
     }
 }
