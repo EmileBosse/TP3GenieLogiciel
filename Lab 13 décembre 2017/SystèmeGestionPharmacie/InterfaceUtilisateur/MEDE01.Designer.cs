@@ -50,8 +50,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.txtRechercheNumero = new System.Windows.Forms.TextBox();
-            this.lbMedecins = new System.Windows.Forms.ListBox();
             this.btnRetour = new System.Windows.Forms.Button();
+            this.lbMedecins = new System.Windows.Forms.ListBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -221,6 +221,7 @@
             this.btnRechercher.TabIndex = 44;
             this.btnRechercher.Text = "Rechercher";
             this.btnRechercher.UseVisualStyleBackColor = true;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // label2
             // 
@@ -254,17 +255,6 @@
             this.txtRechercheNumero.Size = new System.Drawing.Size(70, 20);
             this.txtRechercheNumero.TabIndex = 40;
             // 
-            // lbMedecins
-            // 
-            this.lbMedecins.FormattingEnabled = true;
-            this.lbMedecins.Items.AddRange(new object[] {
-            "1\tSerge Couture,",
-            "2 \tMathieu Audet"});
-            this.lbMedecins.Location = new System.Drawing.Point(12, 12);
-            this.lbMedecins.Name = "lbMedecins";
-            this.lbMedecins.Size = new System.Drawing.Size(308, 355);
-            this.lbMedecins.TabIndex = 45;
-            // 
             // btnRetour
             // 
             this.btnRetour.Location = new System.Drawing.Point(651, 341);
@@ -274,6 +264,14 @@
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
             this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
+            // 
+            // lbMedecins
+            // 
+            this.lbMedecins.FormattingEnabled = true;
+            this.lbMedecins.Location = new System.Drawing.Point(12, 12);
+            this.lbMedecins.Name = "lbMedecins";
+            this.lbMedecins.Size = new System.Drawing.Size(308, 355);
+            this.lbMedecins.TabIndex = 45;
             // 
             // MEDE01
             // 
@@ -319,9 +317,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtRechercheNom;
         private System.Windows.Forms.TextBox txtRechercheNumero;
-        private System.Windows.Forms.ListBox lbMedecins;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtRecherchePrenom;
         private System.Windows.Forms.Button btnRetour;
+        private System.Windows.Forms.ListBox lbMedecins;
     }
 }

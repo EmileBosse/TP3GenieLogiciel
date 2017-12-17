@@ -33,6 +33,31 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lMédecin;
         }
 
+        public List<Médecin> Find(String numero, String nom, String prenom)
+        {
+            String where = "";
+            if (numero != "" && nom != "" && prenom != "")
+            {
+                where = "WHERE ";
+                if (numero != "") { where += ("numéroLicense="+numero); }
+                if (nom != "") { where += ("nom=" + nom); }
+                if (prenom != "") { where += ("prénom=" + prenom); }
+            }
+            
+            DataTable table = DataBase.Select("SELECT * FROM dbo.tblMédecin "+where);
+            if (Util.isNULL(table))
+                return null;
+
+            DataRow[] t = table.Select();
+            List<Médecin> ms = new List<Médecin>();
+            for (int i = 0; i < t.Length; i++)
+            {
+                ms.Add(this.FillFields(t[i]));
+            }
+
+            return ms;
+        }
+
 
         //--------------------------------------------------------------------
         private Médecin FillFields(DataRow pDataRow)
