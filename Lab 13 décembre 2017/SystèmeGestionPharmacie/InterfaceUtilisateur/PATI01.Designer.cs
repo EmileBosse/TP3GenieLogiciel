@@ -31,6 +31,7 @@
             this.btnModifierPatient = new System.Windows.Forms.Button();
             this.btnAjouterPatient = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateNaissance = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.chbPatientActif = new System.Windows.Forms.CheckBox();
             this.txtTelephonePatient = new System.Windows.Forms.TextBox();
@@ -44,6 +45,7 @@
             this.lblNom = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelRecherche = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtRecherchePrenom = new System.Windows.Forms.TextBox();
             this.btnRechercher = new System.Windows.Forms.Button();
@@ -51,8 +53,6 @@
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.lbPatients = new System.Windows.Forms.ListBox();
             this.btbRetour = new System.Windows.Forms.Button();
-            this.dateNaissance = new System.Windows.Forms.DateTimePicker();
-            this.labelRecherche = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,7 @@
             this.btnModifierPatient.TabIndex = 54;
             this.btnModifierPatient.Text = "Modifier";
             this.btnModifierPatient.UseVisualStyleBackColor = true;
+            this.btnModifierPatient.Click += new System.EventHandler(this.btnModifierPatient_Click);
             // 
             // btnAjouterPatient
             // 
@@ -95,6 +96,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 211);
             this.panel2.TabIndex = 52;
+            // 
+            // dateNaissance
+            // 
+            this.dateNaissance.Location = new System.Drawing.Point(99, 149);
+            this.dateNaissance.Name = "dateNaissance";
+            this.dateNaissance.Size = new System.Drawing.Size(200, 20);
+            this.dateNaissance.TabIndex = 51;
             // 
             // label4
             // 
@@ -208,6 +216,14 @@
             this.panel1.Size = new System.Drawing.Size(381, 110);
             this.panel1.TabIndex = 51;
             // 
+            // labelRecherche
+            // 
+            this.labelRecherche.AutoSize = true;
+            this.labelRecherche.Location = new System.Drawing.Point(180, 73);
+            this.labelRecherche.Name = "labelRecherche";
+            this.labelRecherche.Size = new System.Drawing.Size(0, 13);
+            this.labelRecherche.TabIndex = 47;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -253,13 +269,11 @@
             // lbPatients
             // 
             this.lbPatients.FormattingEnabled = true;
-            this.lbPatients.Items.AddRange(new object[] {
-            "1\tDamien Bélanger,",
-            "2 \tOlivin Audet"});
             this.lbPatients.Location = new System.Drawing.Point(12, 12);
             this.lbPatients.Name = "lbPatients";
             this.lbPatients.Size = new System.Drawing.Size(308, 368);
             this.lbPatients.TabIndex = 50;
+            this.lbPatients.SelectedIndexChanged += new System.EventHandler(this.lbPatients_SelectedIndexChanged);
             // 
             // btbRetour
             // 
@@ -270,21 +284,6 @@
             this.btbRetour.Text = "Retour";
             this.btbRetour.UseVisualStyleBackColor = true;
             this.btbRetour.Click += new System.EventHandler(this.btbRetour_Click);
-            // 
-            // dateNaissance
-            // 
-            this.dateNaissance.Location = new System.Drawing.Point(99, 149);
-            this.dateNaissance.Name = "dateNaissance";
-            this.dateNaissance.Size = new System.Drawing.Size(200, 20);
-            this.dateNaissance.TabIndex = 51;
-            // 
-            // labelRecherche
-            // 
-            this.labelRecherche.AutoSize = true;
-            this.labelRecherche.Location = new System.Drawing.Point(180, 73);
-            this.labelRecherche.Name = "labelRecherche";
-            this.labelRecherche.Size = new System.Drawing.Size(0, 13);
-            this.labelRecherche.TabIndex = 47;
             // 
             // PATI01
             // 
