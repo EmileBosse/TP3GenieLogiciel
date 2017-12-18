@@ -21,6 +21,17 @@ namespace SystèmeGestionPharmacie
         {
             InitializeComponent();
             enabled(false);
+            btnModifierMedecin.Enabled = false;
+
+            MédecinMapper mM = new MédecinMapper();
+            ms = mM.Find("", "", "");
+
+            for (int i = 0; i < ms.Count; i++)
+            {
+                lbMedecins.Items.Add(i + "   " + ms[i].Nom + " " + ms[i].Prénom);
+            }
+            if(lbMedecins.Items.Count > 0)
+                lbMedecins.SetSelected(0, true);
         }
 
         private void btnRetour_Click(object sender, EventArgs e)
@@ -79,7 +90,8 @@ namespace SystèmeGestionPharmacie
                 enabled(false);
                 lbMedecins.Enabled = true;
                 //On reselectionne
-                remplirChampInfo(ms[lbMedecins.SelectedIndex]);
+                if(lbMedecins.Items.Count > 0)
+                    remplirChampInfo(ms[lbMedecins.SelectedIndex]);
             }
             else if (btnModifierMedecin.Text == "Modifier")
             {
@@ -122,6 +134,8 @@ namespace SystèmeGestionPharmacie
                 {
                     lbMedecins.Items.Add(i+"   "+ms[i].Nom+" "+ms[i].Prénom);
                 }
+                if (lbMedecins.Items.Count > 0)
+                    lbMedecins.SetSelected(0, true);
             }
             else
             {
@@ -132,6 +146,7 @@ namespace SystèmeGestionPharmacie
         private void lbMedecins_SelectedIndexChanged(object sender, EventArgs e)
         {
             remplirChampInfo(ms[lbMedecins.SelectedIndex]);
+            btnModifierMedecin.Enabled = true;
         }
 
         //utils fonction info
