@@ -94,6 +94,7 @@ namespace SystèmeGestionPharmacie
             }
             else
             {
+                labelRecherche.Text = "";
                 lbPatients.Items.Clear();
                 for (int i = 0; i < lp.Count(); i++)
                 {

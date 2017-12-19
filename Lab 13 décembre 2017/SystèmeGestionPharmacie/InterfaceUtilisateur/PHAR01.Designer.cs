@@ -32,8 +32,8 @@
             this.btnAjouterPharmacie = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.chbPharmacieActif = new System.Windows.Forms.CheckBox();
-            this.txtTelephonePatient = new System.Windows.Forms.TextBox();
-            this.txtAdressePatient = new System.Windows.Forms.TextBox();
+            this.txtTelephonePharmacie = new System.Windows.Forms.TextBox();
+            this.txtAdressePharmacie = new System.Windows.Forms.TextBox();
             this.txtResponsablePharmacie = new System.Windows.Forms.TextBox();
             this.txtNomPharmacie = new System.Windows.Forms.TextBox();
             this.txtNumeroPharmacie = new System.Windows.Forms.TextBox();
@@ -43,6 +43,7 @@
             this.lblNom = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelRecherche = new System.Windows.Forms.Label();
             this.btnRecherche = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             this.btnModifierPharmacie.TabIndex = 59;
             this.btnModifierPharmacie.Text = "Modifier";
             this.btnModifierPharmacie.UseVisualStyleBackColor = true;
+            this.btnModifierPharmacie.Click += new System.EventHandler(this.btnModifierPharmacie_Click);
             // 
             // btnAjouterPharmacie
             // 
@@ -76,8 +78,8 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.chbPharmacieActif);
-            this.panel2.Controls.Add(this.txtTelephonePatient);
-            this.panel2.Controls.Add(this.txtAdressePatient);
+            this.panel2.Controls.Add(this.txtTelephonePharmacie);
+            this.panel2.Controls.Add(this.txtAdressePharmacie);
             this.panel2.Controls.Add(this.txtResponsablePharmacie);
             this.panel2.Controls.Add(this.txtNomPharmacie);
             this.panel2.Controls.Add(this.txtNumeroPharmacie);
@@ -101,19 +103,19 @@
             this.chbPharmacieActif.Text = "Actif";
             this.chbPharmacieActif.UseVisualStyleBackColor = true;
             // 
-            // txtTelephonePatient
+            // txtTelephonePharmacie
             // 
-            this.txtTelephonePatient.Location = new System.Drawing.Point(98, 123);
-            this.txtTelephonePatient.Name = "txtTelephonePatient";
-            this.txtTelephonePatient.Size = new System.Drawing.Size(100, 20);
-            this.txtTelephonePatient.TabIndex = 44;
+            this.txtTelephonePharmacie.Location = new System.Drawing.Point(98, 123);
+            this.txtTelephonePharmacie.Name = "txtTelephonePharmacie";
+            this.txtTelephonePharmacie.Size = new System.Drawing.Size(100, 20);
+            this.txtTelephonePharmacie.TabIndex = 44;
             // 
-            // txtAdressePatient
+            // txtAdressePharmacie
             // 
-            this.txtAdressePatient.Location = new System.Drawing.Point(98, 97);
-            this.txtAdressePatient.Name = "txtAdressePatient";
-            this.txtAdressePatient.Size = new System.Drawing.Size(208, 20);
-            this.txtAdressePatient.TabIndex = 43;
+            this.txtAdressePharmacie.Location = new System.Drawing.Point(98, 97);
+            this.txtAdressePharmacie.Name = "txtAdressePharmacie";
+            this.txtAdressePharmacie.Size = new System.Drawing.Size(208, 20);
+            this.txtAdressePharmacie.TabIndex = 43;
             // 
             // txtResponsablePharmacie
             // 
@@ -183,6 +185,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelRecherche);
             this.panel1.Controls.Add(this.btnRecherche);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -193,6 +196,14 @@
             this.panel1.Size = new System.Drawing.Size(381, 107);
             this.panel1.TabIndex = 56;
             // 
+            // labelRecherche
+            // 
+            this.labelRecherche.AutoSize = true;
+            this.labelRecherche.Location = new System.Drawing.Point(179, 78);
+            this.labelRecherche.Name = "labelRecherche";
+            this.labelRecherche.Size = new System.Drawing.Size(0, 13);
+            this.labelRecherche.TabIndex = 45;
+            // 
             // btnRecherche
             // 
             this.btnRecherche.Location = new System.Drawing.Point(98, 73);
@@ -201,6 +212,7 @@
             this.btnRecherche.TabIndex = 44;
             this.btnRecherche.Text = "Rechercher";
             this.btnRecherche.UseVisualStyleBackColor = true;
+            this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click);
             // 
             // label2
             // 
@@ -237,13 +249,11 @@
             // lbPharmacies
             // 
             this.lbPharmacies.FormattingEnabled = true;
-            this.lbPharmacies.Items.AddRange(new object[] {
-            "1\tJean Coutu Caplan,",
-            "2 \tPharmacie St-Godbout"});
             this.lbPharmacies.Location = new System.Drawing.Point(12, 12);
             this.lbPharmacies.Name = "lbPharmacies";
             this.lbPharmacies.Size = new System.Drawing.Size(308, 329);
             this.lbPharmacies.TabIndex = 55;
+            this.lbPharmacies.SelectedIndexChanged += new System.EventHandler(this.lbPharmacies_SelectedIndexChanged);
             // 
             // btnRetour
             // 
@@ -283,8 +293,8 @@
         private System.Windows.Forms.Button btnAjouterPharmacie;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox chbPharmacieActif;
-        private System.Windows.Forms.TextBox txtTelephonePatient;
-        private System.Windows.Forms.TextBox txtAdressePatient;
+        private System.Windows.Forms.TextBox txtTelephonePharmacie;
+        private System.Windows.Forms.TextBox txtAdressePharmacie;
         private System.Windows.Forms.TextBox txtResponsablePharmacie;
         private System.Windows.Forms.TextBox txtNomPharmacie;
         private System.Windows.Forms.TextBox txtNumeroPharmacie;
@@ -301,5 +311,6 @@
         private System.Windows.Forms.TextBox txtRechercheNumero;
         private System.Windows.Forms.ListBox lbPharmacies;
         private System.Windows.Forms.Button btnRetour;
+        private System.Windows.Forms.Label labelRecherche;
     }
 }
