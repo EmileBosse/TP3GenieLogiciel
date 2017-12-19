@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRES01));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtDatePrescription = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMedecinPrescription = new System.Windows.Forms.TextBox();
             this.lbMedicamentsPrescription = new System.Windows.Forms.ListBox();
@@ -43,7 +42,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtpRechercheDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtRecherchePatient = new System.Windows.Forms.TextBox();
+            this.txtRecherchePrenomPatient = new System.Windows.Forms.TextBox();
             this.btnRecherche = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,6 +50,10 @@
             this.lbPrescriptions = new System.Windows.Forms.ListBox();
             this.btnNouvellePrescription = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
+            this.txtRechercheNomPatient = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtDatePrescription = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,13 +75,6 @@
             this.panel2.Size = new System.Drawing.Size(448, 323);
             this.panel2.TabIndex = 62;
             // 
-            // txtDatePrescription
-            // 
-            this.txtDatePrescription.Location = new System.Drawing.Point(97, 45);
-            this.txtDatePrescription.Name = "txtDatePrescription";
-            this.txtDatePrescription.Size = new System.Drawing.Size(100, 20);
-            this.txtDatePrescription.TabIndex = 50;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -98,9 +94,6 @@
             // lbMedicamentsPrescription
             // 
             this.lbMedicamentsPrescription.FormattingEnabled = true;
-            this.lbMedicamentsPrescription.Items.AddRange(new object[] {
-            "Acétaminophène\t3/jour\t7 jours\t2 renouv (1 restant),",
-            "Ibuprophène\t1/jour\t30 jours\t3 renouv (0 restant)"});
             this.lbMedicamentsPrescription.Location = new System.Drawing.Point(97, 123);
             this.lbMedicamentsPrescription.Name = "lbMedicamentsPrescription";
             this.lbMedicamentsPrescription.Size = new System.Drawing.Size(335, 186);
@@ -158,9 +151,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtRechercheNomPatient);
             this.panel1.Controls.Add(this.dtpRechercheDate);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtRecherchePatient);
+            this.panel1.Controls.Add(this.txtRecherchePrenomPatient);
             this.panel1.Controls.Add(this.btnRecherche);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -182,16 +178,16 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(51, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 46;
-            this.label5.Text = "Patient";
+            this.label5.Text = "Patient:";
             // 
-            // txtRecherchePatient
+            // txtRecherchePrenomPatient
             // 
-            this.txtRecherchePatient.Location = new System.Drawing.Point(98, 73);
-            this.txtRecherchePatient.Name = "txtRecherchePatient";
-            this.txtRecherchePatient.Size = new System.Drawing.Size(208, 20);
-            this.txtRecherchePatient.TabIndex = 45;
+            this.txtRecherchePrenomPatient.Location = new System.Drawing.Point(271, 73);
+            this.txtRecherchePrenomPatient.Name = "txtRecherchePrenomPatient";
+            this.txtRecherchePrenomPatient.Size = new System.Drawing.Size(81, 20);
+            this.txtRecherchePrenomPatient.TabIndex = 45;
             // 
             // btnRecherche
             // 
@@ -201,6 +197,7 @@
             this.btnRecherche.TabIndex = 44;
             this.btnRecherche.Text = "Rechercher";
             this.btnRecherche.UseVisualStyleBackColor = true;
+            this.btnRecherche.Click += new System.EventHandler(this.btnRecherche_Click);
             // 
             // label2
             // 
@@ -230,9 +227,6 @@
             // lbPrescriptions
             // 
             this.lbPrescriptions.FormattingEnabled = true;
-            this.lbPrescriptions.Items.AddRange(new object[] {
-            "1\t2017-01-01\tGaston St-Pierre,",
-            "2 \t2017-02-02\tRoger Benoit"});
             this.lbPrescriptions.Location = new System.Drawing.Point(12, 12);
             this.lbPrescriptions.Name = "lbPrescriptions";
             this.lbPrescriptions.Size = new System.Drawing.Size(308, 550);
@@ -260,6 +254,38 @@
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
             this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
+            // 
+            // txtRechercheNomPatient
+            // 
+            this.txtRechercheNomPatient.Location = new System.Drawing.Point(135, 73);
+            this.txtRechercheNomPatient.Name = "txtRechercheNomPatient";
+            this.txtRechercheNomPatient.Size = new System.Drawing.Size(81, 20);
+            this.txtRechercheNomPatient.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(100, 76);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.TabIndex = 51;
+            this.label7.Text = "Nom";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(222, 76);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "Prénom";
+            // 
+            // txtDatePrescription
+            // 
+            this.txtDatePrescription.Location = new System.Drawing.Point(97, 45);
+            this.txtDatePrescription.Name = "txtDatePrescription";
+            this.txtDatePrescription.Size = new System.Drawing.Size(200, 20);
+            this.txtDatePrescription.TabIndex = 48;
             // 
             // PRES01
             // 
@@ -298,12 +324,15 @@
         private System.Windows.Forms.TextBox txtPatientPrescription;
         private System.Windows.Forms.ListBox lbMedicamentsPrescription;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtRecherchePatient;
+        private System.Windows.Forms.TextBox txtRecherchePrenomPatient;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMedecinPrescription;
         private System.Windows.Forms.Button btnNouvellePrescription;
         private System.Windows.Forms.DateTimePicker dtpRechercheDate;
-        private System.Windows.Forms.TextBox txtDatePrescription;
         private System.Windows.Forms.Button btnRetour;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtRechercheNomPatient;
+        private System.Windows.Forms.DateTimePicker txtDatePrescription;
     }
 }

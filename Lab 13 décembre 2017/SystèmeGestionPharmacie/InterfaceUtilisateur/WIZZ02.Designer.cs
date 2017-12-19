@@ -41,7 +41,7 @@
             this.lblPrenomMed = new System.Windows.Forms.Label();
             this.lblNomMed = new System.Windows.Forms.Label();
             this.lblNumLicenceMed = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.btnPrecedentMed = new System.Windows.Forms.Button();
             this.btnSuivantMed = new System.Windows.Forms.Button();
             this.btnCancelMed = new System.Windows.Forms.Button();
@@ -56,7 +56,6 @@
             this.txtRechercheMedecin.Name = "txtRechercheMedecin";
             this.txtRechercheMedecin.Size = new System.Drawing.Size(100, 20);
             this.txtRechercheMedecin.TabIndex = 0;
-            this.txtRechercheMedecin.Text = "numéro license";
             // 
             // btnRechercheMedecin
             // 
@@ -166,12 +165,12 @@
             this.lblNumLicenceMed.TabIndex = 0;
             this.lblNumLicenceMed.Text = "numéro license:";
             // 
-            // dateTimePicker1
+            // txtDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 83);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.txtDate.Location = new System.Drawing.Point(12, 83);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(200, 20);
+            this.txtDate.TabIndex = 5;
             // 
             // btnPrecedentMed
             // 
@@ -211,15 +210,15 @@
             this.btnAjoutNvMedecin.TabIndex = 9;
             this.btnAjoutNvMedecin.Text = "Ajouter Nouveau Médecin";
             this.btnAjoutNvMedecin.UseVisualStyleBackColor = true;
+            this.btnAjoutNvMedecin.Click += new System.EventHandler(this.btnAjoutNvMedecin_Click);
             // 
             // lblNbResultat
             // 
             this.lblNbResultat.AutoSize = true;
             this.lblNbResultat.Location = new System.Drawing.Point(13, 40);
             this.lblNbResultat.Name = "lblNbResultat";
-            this.lblNbResultat.Size = new System.Drawing.Size(132, 13);
+            this.lblNbResultat.Size = new System.Drawing.Size(0, 13);
             this.lblNbResultat.TabIndex = 3;
-            this.lblNbResultat.Text = "\"message erreur si aucun\"";
             // 
             // WIZZ02
             // 
@@ -230,7 +229,7 @@
             this.Controls.Add(this.btnCancelMed);
             this.Controls.Add(this.btnSuivantMed);
             this.Controls.Add(this.btnPrecedentMed);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtDate);
             this.Controls.Add(this.lblNbResultat);
             this.Controls.Add(this.gbMedecinInfo);
             this.Controls.Add(this.btnRechercheMedecin);
@@ -260,7 +259,7 @@
         private System.Windows.Forms.Label lblPrenomMed;
         private System.Windows.Forms.Label lblNomMed;
         private System.Windows.Forms.Label lblNumLicenceMed;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtDate;
         private System.Windows.Forms.Button btnPrecedentMed;
         private System.Windows.Forms.Button btnSuivantMed;
         private System.Windows.Forms.Button btnCancelMed;

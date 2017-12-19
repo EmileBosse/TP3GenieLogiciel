@@ -57,6 +57,16 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return ms;
         }
 
+        public Médecin Find(String numeroLicense)
+        {
+            DataRow r = DataBase.SelectRow("[tblMédecin]", "numéroLicense='" + numeroLicense + "'");
+            if (Util.isNULL(r))
+                return null;
+            Médecin m = this.FillFields(r);
+            LoadedMap.Add(m.ID, m);
+
+            return m;
+        }
 
         //--------------------------------------------------------------------
         private Médecin FillFields(DataRow pDataRow)
