@@ -54,7 +54,7 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             if (query.Equals("WHERE"))
                 query = "";
 
-                DataTable table = DataBase.Select("SELECT * FROM [tblPatient] " +query);
+                DataTable table = DataBase.Select("SELECT * FROM [tblPatient] " +query+" ORDER BY nom");
                 if (Util.isNULL(table))
                     return null;
 

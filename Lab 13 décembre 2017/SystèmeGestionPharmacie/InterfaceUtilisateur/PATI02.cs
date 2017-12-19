@@ -19,7 +19,6 @@ namespace SystèmeGestionPharmacie
             InitializeComponent();
         }
 
-
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
             var dlgPati = (PATI01)Tag;
@@ -45,6 +44,7 @@ namespace SystèmeGestionPharmacie
                 var dlgPati = (PATI01)Tag;
                 dlgPati.Show();
                 Close();
+                dlgPati.search("","");
             }
             else
             {
