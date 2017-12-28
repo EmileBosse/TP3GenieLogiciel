@@ -27,13 +27,13 @@ namespace SystèmeGestionPharmacie
             Close();
         }
 
-<<<<<<< HEAD
         private void btnAjouterPatient_Click(object sender, EventArgs e)
         {
-            PATI02 dlgAjoutPatient = new PATI02 { Tag = this };
+            PATI02 dlgAjoutPatient = new PATI02 {Tag = this};
             dlgAjoutPatient.Show(this);
             Hide();
-=======
+        }
+
         private void btnRechercher_Click(object sender, EventArgs e)
         {
             PatientMapper pM = new PatientMapper();
@@ -51,7 +51,7 @@ namespace SystèmeGestionPharmacie
                 txtTelephonePatient.Text = p.NuméroTéléphone;
                 dateNaissance.Value = p.DateNaissance;
             }
->>>>>>> 6d2fdc4279844bca1204a86327541d16f2f0116c
+
         }
     }
 }

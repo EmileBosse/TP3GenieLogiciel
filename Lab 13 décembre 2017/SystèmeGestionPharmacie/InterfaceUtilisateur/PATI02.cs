@@ -19,13 +19,13 @@ namespace SystèmeGestionPharmacie
             InitializeComponent();
         }
 
-<<<<<<< HEAD
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            var dlgPati = (PATI01)Tag;
+            var dlgPati = (PATI01) Tag;
             dlgPati.Show();
             Close();
-=======
+        }
+
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             PatientMapper pM = new PatientMapper();
@@ -45,7 +45,6 @@ namespace SystèmeGestionPharmacie
             }
             System.Windows.Forms.MessageBox.Show("Erreur ! Patient non ajouté !");
 
->>>>>>> 6d2fdc4279844bca1204a86327541d16f2f0116c
         }
     }
 }

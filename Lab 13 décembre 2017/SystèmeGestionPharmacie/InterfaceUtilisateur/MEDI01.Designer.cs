@@ -57,6 +57,8 @@
             this.btnModifierMedicament = new System.Windows.Forms.Button();
             this.btnAjouterMedicament = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
+            this.txtQuantiteStock = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.udnUnitePosologie)).BeginInit();
@@ -66,13 +68,11 @@
             // lbMedicaments
             // 
             this.lbMedicaments.FormattingEnabled = true;
-            this.lbMedicaments.Items.AddRange(new object[] {
-            "1\tAcétaminophène,",
-            "2 \tIbuprophène"});
             this.lbMedicaments.Location = new System.Drawing.Point(12, 12);
             this.lbMedicaments.Name = "lbMedicaments";
-            this.lbMedicaments.Size = new System.Drawing.Size(308, 355);
+            this.lbMedicaments.Size = new System.Drawing.Size(308, 381);
             this.lbMedicaments.TabIndex = 34;
+            this.lbMedicaments.SelectedIndexChanged += new System.EventHandler(this.lbMedicaments_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -88,7 +88,7 @@
             // 
             // btnRechercher
             // 
-            this.btnRechercher.Location = new System.Drawing.Point(98, 73);
+            this.btnRechercher.Location = new System.Drawing.Point(102, 74);
             this.btnRechercher.Name = "btnRechercher";
             this.btnRechercher.Size = new System.Drawing.Size(75, 23);
             this.btnRechercher.TabIndex = 44;
@@ -98,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 50);
+            this.label2.Location = new System.Drawing.Point(66, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 43;
@@ -107,7 +107,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 24);
+            this.label1.Location = new System.Drawing.Point(51, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 42;
@@ -115,20 +115,22 @@
             // 
             // txtRechercheNom
             // 
-            this.txtRechercheNom.Location = new System.Drawing.Point(98, 47);
+            this.txtRechercheNom.Location = new System.Drawing.Point(102, 48);
             this.txtRechercheNom.Name = "txtRechercheNom";
             this.txtRechercheNom.Size = new System.Drawing.Size(208, 20);
             this.txtRechercheNom.TabIndex = 41;
             // 
             // txtRechercheNumero
             // 
-            this.txtRechercheNumero.Location = new System.Drawing.Point(98, 21);
+            this.txtRechercheNumero.Location = new System.Drawing.Point(102, 22);
             this.txtRechercheNumero.Name = "txtRechercheNumero";
             this.txtRechercheNumero.Size = new System.Drawing.Size(70, 20);
             this.txtRechercheNumero.TabIndex = 40;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtQuantiteStock);
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.chbMedicamentActif);
             this.panel2.Controls.Add(this.udnUnitePosologie);
@@ -147,13 +149,13 @@
             this.panel2.Controls.Add(this.lblNumero);
             this.panel2.Location = new System.Drawing.Point(345, 125);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(381, 210);
+            this.panel2.Size = new System.Drawing.Size(381, 242);
             this.panel2.TabIndex = 41;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(334, 151);
+            this.label3.Location = new System.Drawing.Point(338, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 49;
@@ -162,7 +164,7 @@
             // chbMedicamentActif
             // 
             this.chbMedicamentActif.AutoSize = true;
-            this.chbMedicamentActif.Location = new System.Drawing.Point(98, 175);
+            this.chbMedicamentActif.Location = new System.Drawing.Point(102, 205);
             this.chbMedicamentActif.Name = "chbMedicamentActif";
             this.chbMedicamentActif.Size = new System.Drawing.Size(47, 17);
             this.chbMedicamentActif.TabIndex = 48;
@@ -171,14 +173,14 @@
             // 
             // udnUnitePosologie
             // 
-            this.udnUnitePosologie.Location = new System.Drawing.Point(98, 149);
+            this.udnUnitePosologie.Location = new System.Drawing.Point(102, 179);
             this.udnUnitePosologie.Name = "udnUnitePosologie";
             this.udnUnitePosologie.Size = new System.Drawing.Size(70, 20);
             this.udnUnitePosologie.TabIndex = 47;
             // 
             // udnJoursPosologie
             // 
-            this.udnJoursPosologie.Location = new System.Drawing.Point(266, 149);
+            this.udnJoursPosologie.Location = new System.Drawing.Point(270, 179);
             this.udnJoursPosologie.Name = "udnJoursPosologie";
             this.udnJoursPosologie.Size = new System.Drawing.Size(62, 20);
             this.udnJoursPosologie.TabIndex = 46;
@@ -186,7 +188,7 @@
             // lblPendantPosologie
             // 
             this.lblPendantPosologie.AutoSize = true;
-            this.lblPendantPosologie.Location = new System.Drawing.Point(174, 151);
+            this.lblPendantPosologie.Location = new System.Drawing.Point(178, 181);
             this.lblPendantPosologie.Name = "lblPendantPosologie";
             this.lblPendantPosologie.Size = new System.Drawing.Size(86, 13);
             this.lblPendantPosologie.TabIndex = 45;
@@ -194,35 +196,35 @@
             // 
             // txtPrixVente
             // 
-            this.txtPrixVente.Location = new System.Drawing.Point(98, 123);
+            this.txtPrixVente.Location = new System.Drawing.Point(102, 125);
             this.txtPrixVente.Name = "txtPrixVente";
             this.txtPrixVente.Size = new System.Drawing.Size(100, 20);
             this.txtPrixVente.TabIndex = 44;
             // 
             // txtEndroit
             // 
-            this.txtEndroit.Location = new System.Drawing.Point(98, 97);
+            this.txtEndroit.Location = new System.Drawing.Point(102, 99);
             this.txtEndroit.Name = "txtEndroit";
             this.txtEndroit.Size = new System.Drawing.Size(100, 20);
             this.txtEndroit.TabIndex = 43;
             // 
             // txtManiereLivraison
             // 
-            this.txtManiereLivraison.Location = new System.Drawing.Point(98, 71);
+            this.txtManiereLivraison.Location = new System.Drawing.Point(102, 73);
             this.txtManiereLivraison.Name = "txtManiereLivraison";
             this.txtManiereLivraison.Size = new System.Drawing.Size(208, 20);
             this.txtManiereLivraison.TabIndex = 42;
             // 
             // txtNomMedicament
             // 
-            this.txtNomMedicament.Location = new System.Drawing.Point(98, 45);
+            this.txtNomMedicament.Location = new System.Drawing.Point(102, 47);
             this.txtNomMedicament.Name = "txtNomMedicament";
             this.txtNomMedicament.Size = new System.Drawing.Size(208, 20);
             this.txtNomMedicament.TabIndex = 41;
             // 
             // txtNumeroMedicament
             // 
-            this.txtNumeroMedicament.Location = new System.Drawing.Point(98, 19);
+            this.txtNumeroMedicament.Location = new System.Drawing.Point(102, 21);
             this.txtNumeroMedicament.Name = "txtNumeroMedicament";
             this.txtNumeroMedicament.Size = new System.Drawing.Size(70, 20);
             this.txtNumeroMedicament.TabIndex = 40;
@@ -230,7 +232,7 @@
             // lblPrixVente
             // 
             this.lblPrixVente.AutoSize = true;
-            this.lblPrixVente.Location = new System.Drawing.Point(37, 126);
+            this.lblPrixVente.Location = new System.Drawing.Point(41, 128);
             this.lblPrixVente.Name = "lblPrixVente";
             this.lblPrixVente.Size = new System.Drawing.Size(54, 13);
             this.lblPrixVente.TabIndex = 39;
@@ -239,7 +241,7 @@
             // lblPosologie
             // 
             this.lblPosologie.AutoSize = true;
-            this.lblPosologie.Location = new System.Drawing.Point(38, 151);
+            this.lblPosologie.Location = new System.Drawing.Point(42, 181);
             this.lblPosologie.Name = "lblPosologie";
             this.lblPosologie.Size = new System.Drawing.Size(53, 13);
             this.lblPosologie.TabIndex = 38;
@@ -248,7 +250,7 @@
             // lblEndroit
             // 
             this.lblEndroit.AutoSize = true;
-            this.lblEndroit.Location = new System.Drawing.Point(51, 100);
+            this.lblEndroit.Location = new System.Drawing.Point(55, 102);
             this.lblEndroit.Name = "lblEndroit";
             this.lblEndroit.Size = new System.Drawing.Size(40, 13);
             this.lblEndroit.TabIndex = 37;
@@ -257,7 +259,7 @@
             // lblManiereLivraison
             // 
             this.lblManiereLivraison.AutoSize = true;
-            this.lblManiereLivraison.Location = new System.Drawing.Point(5, 74);
+            this.lblManiereLivraison.Location = new System.Drawing.Point(9, 76);
             this.lblManiereLivraison.Name = "lblManiereLivraison";
             this.lblManiereLivraison.Size = new System.Drawing.Size(86, 13);
             this.lblManiereLivraison.TabIndex = 36;
@@ -266,7 +268,7 @@
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(62, 48);
+            this.lblNom.Location = new System.Drawing.Point(66, 50);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(29, 13);
             this.lblNom.TabIndex = 35;
@@ -275,7 +277,7 @@
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(47, 22);
+            this.lblNumero.Location = new System.Drawing.Point(51, 24);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(44, 13);
             this.lblNumero.TabIndex = 34;
@@ -283,7 +285,7 @@
             // 
             // btnRuptureStock
             // 
-            this.btnRuptureStock.Location = new System.Drawing.Point(513, 341);
+            this.btnRuptureStock.Location = new System.Drawing.Point(514, 374);
             this.btnRuptureStock.Name = "btnRuptureStock";
             this.btnRuptureStock.Size = new System.Drawing.Size(102, 23);
             this.btnRuptureStock.TabIndex = 44;
@@ -292,7 +294,7 @@
             // 
             // btnModifierMedicament
             // 
-            this.btnModifierMedicament.Location = new System.Drawing.Point(429, 341);
+            this.btnModifierMedicament.Location = new System.Drawing.Point(430, 374);
             this.btnModifierMedicament.Name = "btnModifierMedicament";
             this.btnModifierMedicament.Size = new System.Drawing.Size(75, 23);
             this.btnModifierMedicament.TabIndex = 43;
@@ -301,7 +303,7 @@
             // 
             // btnAjouterMedicament
             // 
-            this.btnAjouterMedicament.Location = new System.Drawing.Point(344, 341);
+            this.btnAjouterMedicament.Location = new System.Drawing.Point(345, 374);
             this.btnAjouterMedicament.Name = "btnAjouterMedicament";
             this.btnAjouterMedicament.Size = new System.Drawing.Size(75, 23);
             this.btnAjouterMedicament.TabIndex = 42;
@@ -311,7 +313,7 @@
             // 
             // btnRetour
             // 
-            this.btnRetour.Location = new System.Drawing.Point(651, 341);
+            this.btnRetour.Location = new System.Drawing.Point(652, 374);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(75, 23);
             this.btnRetour.TabIndex = 61;
@@ -319,11 +321,27 @@
             this.btnRetour.UseVisualStyleBackColor = true;
             this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
+            // txtQuantiteStock
+            // 
+            this.txtQuantiteStock.Location = new System.Drawing.Point(102, 152);
+            this.txtQuantiteStock.Name = "txtQuantiteStock";
+            this.txtQuantiteStock.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantiteStock.TabIndex = 71;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Quantité en stock";
+            // 
             // MEDI01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 376);
+            this.ClientSize = new System.Drawing.Size(738, 409);
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnRuptureStock);
             this.Controls.Add(this.btnModifierMedicament);
@@ -374,5 +392,7 @@
         private System.Windows.Forms.Button btnAjouterMedicament;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRetour;
+        private System.Windows.Forms.TextBox txtQuantiteStock;
+        private System.Windows.Forms.Label label4;
     }
 }

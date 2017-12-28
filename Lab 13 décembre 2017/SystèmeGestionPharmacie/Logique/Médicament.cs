@@ -70,8 +70,12 @@ public class Médicament : DomainObject
       				mPrixVente=value;
     			}
 		    }
-	
- 
+
+
+     public string toString()
+     {
+         return Numéro + Nom;
+     }
  }
 }	
        

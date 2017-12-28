@@ -1,4 +1,4 @@
-﻿namespace SystèmeGestionPharmacie
+﻿namespace SystèmeGestionPharmacie.InterfaceUtilisateur
 {
     partial class MEDI02
     {
@@ -46,6 +46,8 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
+            this.txtQuantiteStock = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.udnUnitePosologie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udnJoursPosologie)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +55,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(337, 141);
+            this.label3.Location = new System.Drawing.Point(337, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 65;
@@ -62,7 +64,7 @@
             // chbMedicamentActif
             // 
             this.chbMedicamentActif.AutoSize = true;
-            this.chbMedicamentActif.Location = new System.Drawing.Point(101, 165);
+            this.chbMedicamentActif.Location = new System.Drawing.Point(101, 196);
             this.chbMedicamentActif.Name = "chbMedicamentActif";
             this.chbMedicamentActif.Size = new System.Drawing.Size(47, 17);
             this.chbMedicamentActif.TabIndex = 64;
@@ -71,14 +73,14 @@
             // 
             // udnUnitePosologie
             // 
-            this.udnUnitePosologie.Location = new System.Drawing.Point(101, 139);
+            this.udnUnitePosologie.Location = new System.Drawing.Point(101, 170);
             this.udnUnitePosologie.Name = "udnUnitePosologie";
             this.udnUnitePosologie.Size = new System.Drawing.Size(70, 20);
             this.udnUnitePosologie.TabIndex = 63;
             // 
             // udnJoursPosologie
             // 
-            this.udnJoursPosologie.Location = new System.Drawing.Point(269, 139);
+            this.udnJoursPosologie.Location = new System.Drawing.Point(269, 170);
             this.udnJoursPosologie.Name = "udnJoursPosologie";
             this.udnJoursPosologie.Size = new System.Drawing.Size(62, 20);
             this.udnJoursPosologie.TabIndex = 62;
@@ -86,7 +88,7 @@
             // lblPendantPosologie
             // 
             this.lblPendantPosologie.AutoSize = true;
-            this.lblPendantPosologie.Location = new System.Drawing.Point(177, 141);
+            this.lblPendantPosologie.Location = new System.Drawing.Point(177, 172);
             this.lblPendantPosologie.Name = "lblPendantPosologie";
             this.lblPendantPosologie.Size = new System.Drawing.Size(86, 13);
             this.lblPendantPosologie.TabIndex = 61;
@@ -139,7 +141,7 @@
             // lblPosologie
             // 
             this.lblPosologie.AutoSize = true;
-            this.lblPosologie.Location = new System.Drawing.Point(41, 141);
+            this.lblPosologie.Location = new System.Drawing.Point(41, 172);
             this.lblPosologie.Name = "lblPosologie";
             this.lblPosologie.Size = new System.Drawing.Size(53, 13);
             this.lblPosologie.TabIndex = 54;
@@ -183,16 +185,17 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(216, 191);
+            this.btnAjouter.Location = new System.Drawing.Point(222, 235);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 66;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(297, 191);
+            this.btnAnnuler.Location = new System.Drawing.Point(303, 235);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 67;
@@ -200,11 +203,29 @@
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
+            // txtQuantiteStock
+            // 
+            this.txtQuantiteStock.Location = new System.Drawing.Point(101, 139);
+            this.txtQuantiteStock.Name = "txtQuantiteStock";
+            this.txtQuantiteStock.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantiteStock.TabIndex = 69;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.TabIndex = 68;
+            this.label1.Text = "Quantité en stock";
+            // 
             // MEDI02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 225);
+            this.ClientSize = new System.Drawing.Size(391, 270);
+            this.Controls.Add(this.txtQuantiteStock);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label3);
@@ -253,5 +274,7 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.TextBox txtQuantiteStock;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -74,7 +74,7 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
         private void FillArray(ref string[] pCols, ref string[] pValues, Médicament pMédicament, bool pIsInsertID)
         {
             int liCpt = 0;
-            int liNombre = 6 + 0;
+            int liNombre = 8 + 0;
             if (pIsInsertID)
             {
                 pCols = new string[liNombre + 1];
