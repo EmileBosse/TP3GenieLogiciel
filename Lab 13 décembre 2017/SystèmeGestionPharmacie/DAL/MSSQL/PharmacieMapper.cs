@@ -33,6 +33,43 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lPharmacie;
         }
 
+        public List<Pharmacie> Find(string numero, string nom)
+        {
+            List<Pharmacie> lPharmacie = new List<Pharmacie>();
+            Pharmacie p;
+
+            String query = "WHERE";
+            if (nom.Trim() != "")
+            {
+                query += " nom ='" + nom + "'";
+                if (numero.Trim() != "")
+                    query += " and numéro='" + numero + "'";
+            }
+            else
+            {
+                if (numero.Trim() != "")
+                    query += " numéro='" + numero + "'";
+            }
+
+            if (query.Equals("WHERE"))
+                query = "";
+
+            DataTable table = DataBase.Select("SELECT * FROM [tblPharmacie] " + query + " ORDER BY nom");
+            if (Util.isNULL(table))
+                return null;
+
+            DataRow[] dr = table.Select();
+            for (int i = 0; i < dr.Length; i++)
+            {
+                p = this.FillFields(dr.ElementAt(i));
+                lPharmacie.Add(p);
+                LoadedMap.Add(p.ID, p);
+            }
+            if (lPharmacie.Count() > 0)
+                return lPharmacie;
+
+            return null;
+        }
 
         //--------------------------------------------------------------------
         private Pharmacie FillFields(DataRow pDataRow)

@@ -21,7 +21,7 @@ namespace SystèmeGestionPharmacie
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            var dlgPati = (PATI01) Tag;
+            var dlgPati = (PATI01)Tag;
             dlgPati.Show();
             Close();
         }
@@ -38,13 +38,18 @@ namespace SystèmeGestionPharmacie
                 NuméroTéléphone = txtTelephonePatient.Text,
                 DateNaissance = dateNaissance.Value
             };
-            if(pM.Insert(p) > 0)
+            if (pM.Insert(p) > 0)
             {
                 System.Windows.Forms.MessageBox.Show("Succès ! Patient ajouté !");
-                this.Hide();
+                var dlgPati = (PATI01)Tag;
+                dlgPati.Show();
+                Close();
+                dlgPati.search("","");
             }
-            System.Windows.Forms.MessageBox.Show("Erreur ! Patient non ajouté !");
-
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Erreur ! Patient non ajouté !");
+            }
         }
     }
 }

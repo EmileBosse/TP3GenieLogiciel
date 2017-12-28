@@ -33,18 +33,42 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lPatient;
         }
 
-        public Patient Find(string nom, string prenom)
+        public List<Patient> Find(string nom, string prenom)
         {
-            Patient lPatient;
-            
-                DataRow row = DataBase.SelectRow("[tblPatient]"," Nom='"+nom+"' and Prénom='"+prenom+"'");
-                if (Util.isNULL(row))
+            List<Patient> lPatient = new List<Patient>();
+            Patient p;
+
+            String query = "WHERE";
+            if (nom.Trim() != "")
+            {
+                query += " nom ='" + nom + "'";
+                if (prenom.Trim() != "")
+                    query += " and prénom='" + prenom + "'";
+            }
+            else
+            {
+                if (prenom.Trim() != "")
+                    query += " prénom='" + prenom + "'";
+            }   
+
+            if (query.Equals("WHERE"))
+                query = "";
+
+                DataTable table = DataBase.Select("SELECT * FROM [tblPatient] " +query+" ORDER BY nom");
+                if (Util.isNULL(table))
                     return null;
-                lPatient = this.FillFields(row);
-                LoadedMap.Add(lPatient.ID, lPatient);
-            
-            return lPatient;
-            throw new NotImplementedException();
+
+            DataRow[] dr = table.Select();
+            for(int i=0;i<dr.Length ;i++)
+            {
+                p = this.FillFields(dr.ElementAt(i));
+                lPatient.Add(p);
+                LoadedMap.Add(p.ID, p);
+            }
+            if(lPatient.Count()>0)
+                 return lPatient;
+
+            return null;
         }
 
 

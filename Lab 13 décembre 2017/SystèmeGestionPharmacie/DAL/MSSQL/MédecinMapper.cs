@@ -1,5 +1,3 @@
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +31,42 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lMédecin;
         }
 
+        public List<Médecin> Find(String numero, String nom, String prenom)
+        {
+            String where = "";
+            bool ajouterAnd = false;
+            if (numero != "" || nom != "" || prenom != "")
+            {
+                where = "WHERE ";
+                if (numero != "") { where += ("numéroLicense='"+numero+"'"); ajouterAnd = true; }
+                if (nom != "") { if (ajouterAnd) { where += ("and nom='"+nom+"'"); } else { where += ("nom='"+nom+"'"); } ajouterAnd = true; }
+                if (prenom != "") { if (ajouterAnd) { where += ("and prénom='"+prenom+"'"); } else { where += ("prénom='"+prenom+"'"); } }
+            }
+            
+            DataTable table = DataBase.Select("SELECT * FROM dbo.tblMédecin "+where+"ORDER BY nom");
+            if (Util.isNULL(table))
+                return null;
+
+            DataRow[] t = table.Select();
+            List<Médecin> ms = new List<Médecin>();
+            for (int i = 0; i < t.Length; i++)
+            {
+                ms.Add(this.FillFields(t[i]));
+            }
+
+            return ms;
+        }
+
+        public Médecin Find(String numeroLicense)
+        {
+            DataRow r = DataBase.SelectRow("[tblMédecin]", "numéroLicense='" + numeroLicense + "'");
+            if (Util.isNULL(r))
+                return null;
+            Médecin m = this.FillFields(r);
+            LoadedMap.Add(m.ID, m);
+
+            return m;
+        }
 
         //--------------------------------------------------------------------
         private Médecin FillFields(DataRow pDataRow)
