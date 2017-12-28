@@ -33,27 +33,52 @@ namespace SystèmeGestionPharmacie.DAL.MSSQL
             return lMédicament;
         }
 
+        public List<Médicament> Find(String nom, String numero)
+        {
+            String where = "";
+            bool ajouterAnd = false;
+            if (numero != "" || nom != "")
+            {
+                where = "WHERE ";
+                if (numero != "") { where += ("numéro='" + numero + "'"); ajouterAnd = true; }
+                if (nom != "") { if (ajouterAnd) { where += ("and nom='" + nom + "'"); } else { where += ("nom='" + nom + "'"); } ajouterAnd = true; }
+            }
+
+            DataTable table = DataBase.Select("SELECT * FROM dbo.tblMédicament " + where + "ORDER BY numéro");
+            if (Util.isNULL(table))
+                return null;
+
+            DataRow[] t = table.Select();
+            List<Médicament> ms = new List<Médicament>();
+            for (int i = 0; i < t.Length; i++)
+            {
+                ms.Add(this.FillFields(t[i]));
+            }
+
+            return ms;
+        }
+
 
         //--------------------------------------------------------------------
         private Médicament FillFields(DataRow pDataRow)
         {
             Médicament lMédicament = new Médicament();
 	    
-                 lMédicament.Numéro = (string)pDataRow["Numéro"];
+            lMédicament.Numéro = (string)pDataRow["Numéro"];
 		
-                 lMédicament.Nom = (string)pDataRow["Nom"];
+            lMédicament.Nom = (string)pDataRow["Nom"];
 		
-                 lMédicament.ManièreLivraison = (string)pDataRow["ManièreLivraison"];
+            lMédicament.ManièreLivraison = (string)pDataRow["ManièreLivraison"];
 		
-                 lMédicament.Endroit = (string)pDataRow["Endroit"];
+            lMédicament.Endroit = (string)pDataRow["Endroit"];
 		
-                  lMédicament.PosologieMédicament.NombreUnitésParJour = (decimal)pDataRow["NombreUnitésParJour"];
+            //lMédicament.PosologieMédicament.NombreUnitésParJour = (decimal)pDataRow["NombreUnitésParJour"];
 	         
-                  lMédicament.PosologieMédicament.NombreJours = (int)pDataRow["NombreJours"];
+            //lMédicament.PosologieMédicament.NombreJours = (int)pDataRow["NombreJours"];
 	         
-                 lMédicament.QuantitéStock = (decimal)pDataRow["QuantitéStock"];
+            lMédicament.QuantitéStock = (decimal)pDataRow["QuantitéStock"];
 		
-                 lMédicament.PrixVente = (decimal)pDataRow["PrixVente"];
+            lMédicament.PrixVente = (decimal)pDataRow["PrixVente"];
 		
             lMédicament.ID = new Guid(pDataRow["ID"].ToString());
 

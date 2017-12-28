@@ -36,6 +36,8 @@
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.txtRechercheNumero = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtQuantiteStock = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.chbMedicamentActif = new System.Windows.Forms.CheckBox();
             this.udnUnitePosologie = new System.Windows.Forms.NumericUpDown();
@@ -57,8 +59,6 @@
             this.btnModifierMedicament = new System.Windows.Forms.Button();
             this.btnAjouterMedicament = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
-            this.txtQuantiteStock = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.udnUnitePosologie)).BeginInit();
@@ -94,6 +94,7 @@
             this.btnRechercher.TabIndex = 44;
             this.btnRechercher.Text = "Rechercher";
             this.btnRechercher.UseVisualStyleBackColor = true;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // label2
             // 
@@ -151,6 +152,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 242);
             this.panel2.TabIndex = 41;
+            // 
+            // txtQuantiteStock
+            // 
+            this.txtQuantiteStock.Location = new System.Drawing.Point(102, 152);
+            this.txtQuantiteStock.Name = "txtQuantiteStock";
+            this.txtQuantiteStock.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantiteStock.TabIndex = 71;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Quantité en stock";
             // 
             // label3
             // 
@@ -291,6 +308,7 @@
             this.btnRuptureStock.TabIndex = 44;
             this.btnRuptureStock.Text = "Rapports";
             this.btnRuptureStock.UseVisualStyleBackColor = true;
+            this.btnRuptureStock.Click += new System.EventHandler(this.btnRuptureStock_Click);
             // 
             // btnModifierMedicament
             // 
@@ -300,6 +318,7 @@
             this.btnModifierMedicament.TabIndex = 43;
             this.btnModifierMedicament.Text = "Modifier";
             this.btnModifierMedicament.UseVisualStyleBackColor = true;
+            this.btnModifierMedicament.Click += new System.EventHandler(this.btnModifierMedicament_Click);
             // 
             // btnAjouterMedicament
             // 
@@ -320,22 +339,6 @@
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
             this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
-            // 
-            // txtQuantiteStock
-            // 
-            this.txtQuantiteStock.Location = new System.Drawing.Point(102, 152);
-            this.txtQuantiteStock.Name = "txtQuantiteStock";
-            this.txtQuantiteStock.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantiteStock.TabIndex = 71;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 155);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "Quantité en stock";
             // 
             // MEDI01
             // 

@@ -74,7 +74,7 @@ public class Médicament : DomainObject
 
      public string toString()
      {
-         return Numéro + Nom;
+         return Numéro + " " + Nom;
      }
  }
 }	
